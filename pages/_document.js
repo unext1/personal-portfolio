@@ -24,6 +24,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css"
+          />
         </Head>
         <body>
           <Main />

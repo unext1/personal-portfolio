@@ -22,16 +22,23 @@ a {
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 100vh !important;
-  background: #33415c !important;
+  background: #15151b !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #5c677d !important;
+  background: #6333ff !important;
   border-radius: 100vh;
 }
 
 .firefox-scrollbar {
   scrollbar-color: #33415c;
   scrollbar-width: thin;
+}
+
+.sidebar-tooltip {
+  @apply absolute  w-auto p-1.5 px-3 left-10 ml-12 min-w-max rounded-md
+  text-white bg-brand-gray-darker
+  text-xs font-semibold tracking-wide uppercase 
+  transition-all duration-100 scale-0 origin-right;
 }

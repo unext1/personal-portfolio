@@ -10,85 +10,127 @@ import {
   UsersIcon,
   XIcon,
 } from "@heroicons/react/outline";
-
-const navigation = [
-  { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
-  { name: "Team", href: "#", icon: UsersIcon, current: false },
-  { name: "Projects", href: "#", icon: FolderIcon, current: false },
-  { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
-  { name: "Documents", href: "#", icon: InboxIcon, current: false },
-  { name: "Reports", href: "#", icon: ChartBarIcon, current: false },
-];
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Navbar = () => {
+  const navigation = [
+    { name: "Dashboard", href: "/", icon: HomeIcon },
+    { name: "Team", href: "/team", icon: UsersIcon },
+    { name: "Projects", href: "#", icon: FolderIcon },
+    { name: "Calendar", href: "#", icon: CalendarIcon },
+    { name: "Documents", href: "#", icon: InboxIcon },
+    { name: "Reports", href: "#", icon: ChartBarIcon },
+  ];
+
+  const router = useRouter();
+
   return (
-    <div className="h-screen flex overflow-hidden ">
-      <div className="hidden md:flex w-80">
-        <div className="px-5 flex-1 flex flex-col min-h-0 border-r border-brand-blue-800 bg-brand-blue-900">
+    <div className="relative z-10">
+      <div className="hidden md:flex fixed h-full">
+        <div className="px-5 flex-1 flex flex-col border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
           <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
-            <div className="h-10 mx-auto mb-3">
-              <svg
-                viewBox="0 0 57 52"
-                overflow="visible"
-                xmlns="http://www.w3.org/2000/svg"
-                height="100%"
-                fill="#fff"
-              >
-                <path
-                  d="M14.18 36.04s7.13-7.78 13.87-.13a11.62 11.62 0 012.37-2.08 8.08 8.08 0 0012.86 4.13c2.2 2.88 6.5 7.55 8.69 3.32 3.128-6.064-2.729-6.328-3.244-6.34h-.036c5.03-5.67 12.89 6.78 1.79 14-10.51 6.8-21.21-3.69-22.39-4.91-1.18 1.22-11.88 11.71-22.38 4.91-11.14-7.22-3.26-19.67 1.74-14 0 0-6.55 0-3.27 6.34 3 5.83 10-5.24 10-5.24zM35.84 0a10.45 10.45 0 0110.48 10.45v7.49a10.5 10.5 0 01-.32 2.59h2a4 4 0 014 3.97v.17a4 4 0 01-4 4h-2.27a8.08 8.08 0 00-15 0H7.7a4 4 0 01-4-4v-.14a4 4 0 014-4h2a10.5 10.5 0 01-.32-2.59v-7.49A10.45 10.45 0 0119.84 0z"
-                  fill="#fff"
-                ></path>
-              </svg>
-            </div>
-            <nav className="mt-5 flex-1 space-y-2.5">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-brand-blue-800 text-white"
-                      : "text-brand-gray-800 hover:bg-brand-blue-800 hover:text-white",
-                    "group flex items-center px-3 py-2.5 text-sm font-medium rounded-md"
-                  )}
-                >
-                  <item.icon
-                    className={classNames(
-                      item.current
-                        ? "text-white"
-                        : "text-brand-gray-800 group-hover:text-white",
-                      "mr-3 flex-shrink-0 h-6 w-6"
-                    )}
-                    aria-hidden="true"
+            <div className="mx-auto mb-3">
+              <Link href="/">
+                <a>
+                  <motion.img
+                    whileTap={{ scale: 1.1, rotate: 0 }}
+                    whileHover={{ rotate: 10, scale: 0.9 }}
+                    src="/icon1.png"
+                    className="text-white h-12 w-12"
+                    style={{ filter: "invert(100%) " }}
                   />
-                  {item.name}
                 </a>
+              </Link>
+            </div>
+            <nav className="mt-5 flex-1 space-y-2.5 ">
+              {navigation.map((item) => (
+                <Link key={item.name} href={item.href}>
+                  <a className="group flex">
+                    <div className="sidebar-tooltip group-hover:scale-100 my-auto mt-1.5 z-50 ">
+                      {item.name}
+                    </div>
+                    <motion.div
+                      whileTap={{ scale: 0.8 }}
+                      className={classNames(
+                        router.asPath == item.href
+                          ? "bg-brand-purple text-white "
+                          : "text-brand-gray-darker hover:bg-brand-purple hover:text-white ",
+                        "group flex items-center px-3 py-2.5 text-sm font-medium rounded-md "
+                      )}
+                    >
+                      <item.icon
+                        className={classNames(
+                          router.asPath == item.href
+                            ? "text-white"
+                            : "text-brand-gray-darker group-hover:text-white",
+                          "flex-shrink-0 h-6 w-6"
+                        )}
+                        aria-hidden="true"
+                      />
+                    </motion.div>
+                  </a>
+                </Link>
               ))}
             </nav>
           </div>
-          <div className="flex-shrink-0 flex  p-4">
-            <a href="#" className="flex-shrink-0 w-full group block">
-              <div className="flex items-center">
-                <div>
-                  <img
-                    className="inline-block h-9 w-9 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center w-full fixed md:hidden bottom-0 p-5 ">
+        <div className="w-full max-w-md mx-auto ">
+          <div className="bg-brand-dark-600 bg-opacity-90 shadow-2xl rounded-full ">
+            <div className="flex py-2">
+              <div className="flex justify-around w-full my-auto px-5">
+                <div className="group">
+                  <a
+                    href="#"
+                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                  >
+                    <i className="fa fa-cog text-2xl block"></i>
+                  </a>
                 </div>
-                <div className="ml-3">
-                  <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                    Tom Cook
-                  </p>
-                  <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
-                    View profile
-                  </p>
+                <div className="group">
+                  <a
+                    href="#"
+                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                  >
+                    <i className="fa fa-compass text-2xl block"></i>
+                  </a>
                 </div>
               </div>
-            </a>
+              <div className="flex-1 group w-full h-full my-auto mx-auto flex justify-center cursor-pointer outline-none">
+                <motion.div
+                  whileTap={{ scale: 0.8 }}
+                  transition={{ duration: 0.1 }}
+                  className="h-12 w-12 bg-brand-green rounded-full text-center my-auto"
+                >
+                  <i className="fa fa-home text-2xl text-white my-auto mt-2"></i>
+                </motion.div>
+              </div>
+              <div className="flex justify-around w-full my-auto  px-5">
+                <div className="group">
+                  <a
+                    href="#"
+                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                  >
+                    <i className="fa fa-search  text-2xl block"></i>
+                  </a>
+                </div>
+                <div className="group">
+                  <a
+                    href="#"
+                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                  >
+                    <i className="fa fa-user text-2xl block"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,3 +139,49 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+  /* <div className="hidden md:flex w-80">
+<div className="px-5 flex-1 flex flex-col min-h-0 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
+  <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
+    <motion.div whileTap={{ scale: 1.2 }} className="mx-auto mb-3">
+      <Link href="/">
+        <a>
+          <img
+            src="/icon1.png"
+            className="text-white h-16"
+            style={{ filter: "invert(100%) " }}
+          />
+        </a>
+      </Link>
+    </motion.div>
+    <nav className="mt-5 flex-1 space-y-2.5">
+      {navigation.map((item) => (
+        <Link key={item.name} href={item.href}>
+          <a
+            className={classNames(
+              router.asPath == item.href
+                ? "bg-brand-purple text-white "
+                : "text-brand-gray-darker hover:bg-brand-purple hover:text-white ",
+              "group flex items-center px-3 py-2.5 text-sm font-medium rounded-md "
+            )}
+          >
+            <item.icon
+              className={classNames(
+                router.asPath == item.href
+                  ? "text-white"
+                  : "text-brand-gray-darker group-hover:text-white",
+                "mr-3 flex-shrink-0 h-6 w-6"
+              )}
+              aria-hidden="true"
+            />
+            {item.name}
+          </a>
+        </Link>
+      ))}
+    </nav>
+  </div>
+  <div className="flex-shrink-0 flex p-4"></div>
+</div>
+</div> */
+}
