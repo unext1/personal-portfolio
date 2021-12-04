@@ -26,7 +26,7 @@ function classNames(...classes) {
 const Navbar = () => {
   return (
     <div className="h-screen flex overflow-hidden ">
-      <div className="hidden md:flex w-">
+      <div className="hidden md:flex w-80">
         <div className="px-5 flex-1 flex flex-col min-h-0 border-r border-brand-blue-800 bg-brand-blue-900">
           <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
             <div className="h-10 mx-auto mb-3">

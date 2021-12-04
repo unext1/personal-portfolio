@@ -4,7 +4,7 @@ import Navbar from "./navbar";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="flex w-full min-h-screen bg-brand-blue-90">
+    <div className="flex w-full min-h-screen bg-brand-blue-900">
       <Navbar />
       <main className=" w-full h-full overflow-y-auto focus:outline-none">
         {children}

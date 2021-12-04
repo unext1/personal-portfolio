@@ -38,7 +38,7 @@ export default function Index({ crypto }) {
               Rates
             </h1>
           </div>
-          <div className="h-56  overflow-y-scroll">
+          <div className="h-56  overflow-y-scroll firefox-scrollbar">
             {crypto.data.map((i) => (
               <div className="flex w-full my-5" key={i.id}>
                 <i className="fa fa-facebook text-2xl rounded-full text-white" />
@@ -80,7 +80,12 @@ export default function Index({ crypto }) {
     </div>
   );
 }
-export async function getStaticProps(context) {
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+
   const top10 = await fetch(
     "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=10",
     {

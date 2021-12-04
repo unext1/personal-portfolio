@@ -28,4 +28,10 @@ a {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #5c677d !important;
+  border-radius: 100vh;
+}
+
+.firefox-scrollbar {
+  scrollbar-color: #33415c;
+  scrollbar-width: thin;
 }
