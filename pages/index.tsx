@@ -58,7 +58,7 @@ export default function Index() {
                     <button className="relative px-10 py-4 bg-brand-dark-900 rounded-xl leading-none flex items-center divide-x divide-gray-600">
                       <span className="flex items-center space-x-5">
                         <motion.img
-                          src="/image(2).png"
+                          src="../peace.png"
                           className="text-white h-6"
                         />
                         <span className="text-gray-100">Get in touch</span>
@@ -106,7 +106,7 @@ export default function Index() {
                   This is what i do
                 </h1>
                 <img
-                  src="/image(1).png"
+                  src="../happy.png"
                   className="h-20 ml-3 rotate-12 transform"
                 />
               </div>
