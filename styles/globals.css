@@ -42,3 +42,13 @@ a {
   text-xs font-semibold tracking-wide uppercase 
   transition-all duration-100 scale-0 origin-right;
 }
+
+.experience-height {
+  height: 290px;
+}
+
+@media all and (max-width: 960px) {
+  .experience-height {
+    height: auto;
+  }
+}

@@ -30,7 +30,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 ">
       <div className="hidden md:flex fixed h-full">
         <div className="px-5 flex-1 flex flex-col border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
           <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
@@ -60,7 +60,7 @@ const Navbar = () => {
                         router.asPath == item.href
                           ? "bg-brand-purple text-white "
                           : "text-brand-gray-darker hover:bg-brand-purple hover:text-white ",
-                        "group flex items-center px-3 py-2.5 text-sm font-medium rounded-md "
+                        "group flex items-center px-3 py-2.5 text-sm font-medium rounded-xl "
                       )}
                     >
                       <item.icon
@@ -81,7 +81,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full fixed md:hidden bottom-0 p-5 ">
+      {/* MOBILE NAV */}
+      <div className="flex items-center justify-center w-full fixed md:hidden bottom-5 p-5 ">
         <div className="w-full max-w-md mx-auto ">
           <div className="bg-brand-dark-600 bg-opacity-90 shadow-2xl rounded-full ">
             <div className="flex py-2">
@@ -104,13 +105,15 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex-1 group w-full h-full my-auto mx-auto flex justify-center cursor-pointer outline-none">
-                <motion.div
-                  whileTap={{ scale: 0.8 }}
-                  transition={{ duration: 0.1 }}
-                  className="h-12 w-12 bg-brand-green rounded-full text-center my-auto"
-                >
-                  <i className="fa fa-home text-2xl text-white my-auto mt-2"></i>
-                </motion.div>
+                <Link href="/">
+                  <motion.a
+                    whileTap={{ scale: 0.8 }}
+                    transition={{ duration: 0.1 }}
+                    className="h-12 w-12 bg-brand-green rounded-full text-center my-auto"
+                  >
+                    <i className="fa fa-home text-2xl text-white my-auto mt-2"></i>
+                  </motion.a>
+                </Link>
               </div>
               <div className="flex justify-around w-full my-auto  px-5">
                 <div className="group">

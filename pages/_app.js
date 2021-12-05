@@ -11,6 +11,7 @@ import {
 
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -24,13 +25,16 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div key={router.route} className="overflow-x-hidden">
+      <motion.div key={router.route} className="">
         {loading ? (
           <Loader />
         ) : (
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+            <Footer />
+          </>
         )}
       </motion.div>
     </AnimatePresence>

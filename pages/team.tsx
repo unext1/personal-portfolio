@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <div className="max-h-screen overflow-hidden">
       <div className="grid-cols-1 xl:grid-cols-6 grid gap-10 bg-brand-dark-900 p-5 lg:p-20 ">
-        <div className="bg-brand-purple col-span-1 xl:col-span-2 rounded-2xl shadow relative p-10">
+        <div className="bg-brand-purple col-span-1 xl:col-span-2 rounded-xl shadow relative p-10">
           <div>
             <img src="/il1.png" className="h-72 w-full object-cover"></img>
           </div>
@@ -29,7 +29,7 @@ const Team = () => {
               duration: 0.2,
             },
           }}
-          className="bg-brand-purple col-span-1 xl:col-span-4 rounded-2xl shadow-2xl p-10 relative"
+          className="bg-brand-purple col-span-1 xl:col-span-4 rounded-xl shadow-2xl p-10 relative"
         >
           <div className="mb-10">
             <h1 className="text-white uppercase font-semibold text-lg tracking-wider">
