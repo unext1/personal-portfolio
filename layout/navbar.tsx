@@ -20,7 +20,7 @@ function classNames(...classes) {
 const Navbar = () => {
   const navigation = [
     { name: "Dashboard", href: "/", icon: HomeIcon },
-    { name: "Team", href: "/team", icon: UsersIcon },
+    { name: "Contact", href: "/contact", icon: UsersIcon },
     { name: "Projects", href: "#", icon: FolderIcon },
     { name: "Calendar", href: "#", icon: CalendarIcon },
     { name: "Documents", href: "#", icon: InboxIcon },

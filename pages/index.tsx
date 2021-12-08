@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   NewspaperIcon,
   PhoneIcon,
   SupportIcon,
   MailIcon,
 } from "@heroicons/react/outline";
+import Link from "next/link";
 
 export default function Index() {
   const supportLinks = [
@@ -28,10 +29,11 @@ export default function Index() {
         "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
     },
   ];
+
   return (
     <>
       <div className="overflow-x-hidden overflow-y-hidden px-6 sm:px-8 ">
-        <div className="py-24 lg:pb-52 lg:pt-20 lg:max-w-screen-2xl ">
+        <div className="py-24 lg:pb-52 lg:pt-20 ">
           <div className="mx-auto lg:grid lg:grid-cols-2">
             <div className="my-auto ">
               <motion.div
@@ -55,35 +57,38 @@ export default function Index() {
                     className="relative group px-0.5"
                   >
                     <div className="absolute -inset-0 bg-gradient-to-r from-brand-green to-brand-purple rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-200 group-hover:duration-200 animate-tilt"></div>
-                    <button className="relative px-10 py-4 bg-brand-dark-900 rounded-xl leading-none flex items-center divide-x divide-gray-600">
-                      <span className="flex items-center space-x-5">
-                        <motion.img
-                          src="../peace.png"
-                          className="text-white h-6"
-                        />
-                        <span className="text-gray-100">Get in touch</span>
-                      </span>
-                    </button>
+                    <Link href="/contact">
+                      <a className="relative px-10 py-4 bg-brand-dark-900 rounded-xl leading-none flex items-center divide-x divide-gray-600">
+                        <span className="flex items-center space-x-5">
+                          <motion.img
+                            src="../peace.png"
+                            className="text-white h-6"
+                          />
+                          <span className="text-gray-100">Get in touch</span>
+                        </span>
+                      </a>
+                    </Link>
                   </motion.div>
                 </div>
               </motion.div>
             </div>
             <div className="w-full my-auto hidden lg:block ">
               <motion.img
+                whileHover={{ scale: 0.8, rotate: 10 }}
                 initial={{ x: 1000, opacity: 1 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{
-                  x: { type: "spring", stiffness: 50 },
+                  x: { type: "spring", stiffness: 50, duration: 10 },
                 }}
-                src="/il2.png"
+                src="../il2.png"
                 alt=""
-                className="w-full "
+                className="w-5/6 mx-auto"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="px-6 sm:px-8 lg:max-w-screen-2xl mt-20">
+      <div className="px-6 sm:px-8 mt-20">
         <div className="grid w-full lg:grid-cols-4 gap-x-16">
           <div className=" lg:sticky lg:top-20 w-full col-span-3 lg:col-span-1 experience-height ">
             <div className="flex md:block ">
@@ -196,6 +201,24 @@ export default function Index() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className=" h-screen relative flex justify-center items-center">
+        <motion.button
+          className="h-20 w-52 bg-white rounded-xl "
+          drag
+          whileHover={{ opacity: 1 }}
+          whileTap={{
+            opacity: 1,
+            scale: 1.05,
+            boxShadow: "0px 5px 8px #037",
+          }}
+          whileDrag={{ scale: 1.1, boxShadow: "0px 10px 16px #037" }}
+          transition={{ duration: 0.6 }}
+          dragConstraints={{ left: 0, right: 10, top: 0, bottom: 20 }}
+        >
+          Say Hi
+        </motion.button>
       </div>
     </>
   );

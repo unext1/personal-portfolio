@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
         animate="in"
         variants={pageVariants}
         transition={pageTransition}
-        className="mx-auto"
+        className="mx-auto container"
       >
         {children}
       </motion.main>
