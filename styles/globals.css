@@ -3,6 +3,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Urbanist" !important;
+  /* background: 50% / contain
+    url(https://www.halo-lab.com/images/common/universe.png) black;
+  min-height: 100vh; */
+  scrollbar-color: #22222c #15151b;
+  scrollbar-width: thin;
 }
 
 a {
@@ -16,24 +21,17 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px !important;
+  width: 8px !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 100vh !important;
   background: #15151b !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6333ff !important;
-  border-radius: 100vh;
-}
-
-.firefox-scrollbar {
-  scrollbar-color: #33415c;
-  scrollbar-width: thin;
+  background: #22222c !important;
 }
 
 .sidebar-tooltip {

@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <div
       className={
-        "bg-brand-dark-900 h-screen w-screen z-50 absolute top-0 inset-0"
+        " h-screen w-screen z-50 absolute top-0 inset-0 bg-brand-dark-900"
       }
     >
       <div className="flex w-full h-full justify-center items-center mx-auto my-auto">

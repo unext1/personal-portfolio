@@ -11,7 +11,7 @@ import {
 
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
-import Footer from "../components/footer";
+import Footer from "../layout/footer";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

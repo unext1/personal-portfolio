@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
 import { pageTransition, pageVariants } from "lib/framer-settings";
-import Footer from "../components/footer";
+import Footer from "./footer";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="flex w-full bg-brand-dark-900 min-h-screen ">
+    <div className="flex w-full min-h-screen bg-brand-dark-900 border-t-2 border-brand-dark-700">
       <div className="mr-0 md:mr-[90px]">
         <Navbar />
       </div>
@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
         animate="in"
         variants={pageVariants}
         transition={pageTransition}
-        className="mx-auto container"
+        className="mx-auto container px-6 md:px-8 "
       >
         {children}
       </motion.main>

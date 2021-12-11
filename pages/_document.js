@@ -29,7 +29,7 @@ class MyDocument extends Document {
             href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css"
           />
         </Head>
-        <body>
+        <body className="overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
