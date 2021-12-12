@@ -31,9 +31,9 @@ const Navbar = () => {
 
   return (
     <div className="relative z-10 ">
-      <div className="hidden md:flex fixed h-full">
-        <div className="px-5 flex-1 flex flex-col border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
-          <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
+      <div className="fixed hidden h-full md:flex">
+        <div className="flex flex-col flex-1 px-5 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
+          <div className="flex flex-col flex-1 pt-6 overflow-y-auto">
             <div className="mx-auto mb-3">
               <Link href="/">
                 <a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     whileTap={{ scale: 1.1, rotate: 0 }}
                     whileHover={{ rotate: 10, scale: 0.9 }}
                     src="/icon1.png"
-                    className="text-white h-12 w-12"
+                    className="w-12 h-12 text-white"
                     style={{ filter: "invert(100%) " }}
                   />
                 </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <nav className="mt-5 flex-1 space-y-2.5 ">
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
-                  <a className="group flex">
+                  <a className="flex group">
                     <div className="sidebar-tooltip group-hover:scale-100 my-auto mt-1.5 z-50 ">
                       {item.name}
                     </div>
@@ -82,54 +82,54 @@ const Navbar = () => {
       </div>
 
       {/* MOBILE NAV */}
-      <div className="flex items-center justify-center w-full fixed md:hidden bottom-5 p-5 ">
+      <div className="fixed flex items-center justify-center w-full p-5 md:hidden bottom-5 ">
         <div className="w-full max-w-md mx-auto ">
-          <div className="bg-brand-dark-600 bg-opacity-90 shadow-2xl rounded-full ">
+          <div className="rounded-full shadow-2xl bg-brand-dark-600 bg-opacity-90 ">
             <div className="flex py-2">
-              <div className="flex justify-around w-full my-auto px-5">
+              <div className="flex justify-around w-full px-5 my-auto">
                 <div className="group">
                   <a
                     href="#"
-                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
                   >
-                    <i className="fa fa-cog text-2xl block"></i>
+                    <i className="block text-2xl fa fa-cog"></i>
                   </a>
                 </div>
                 <div className="group">
                   <a
                     href="#"
-                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
                   >
-                    <i className="fa fa-compass text-2xl block"></i>
+                    <i className="block text-2xl fa fa-compass"></i>
                   </a>
                 </div>
               </div>
-              <div className="flex-1 group w-full h-full my-auto mx-auto flex justify-center cursor-pointer outline-none">
+              <div className="flex justify-center flex-1 w-full h-full mx-auto my-auto outline-none cursor-pointer group">
                 <Link href="/">
                   <motion.a
                     whileTap={{ scale: 0.8 }}
                     transition={{ duration: 0.1 }}
-                    className="h-12 w-12 bg-brand-green rounded-full text-center my-auto"
+                    className="w-12 h-12 my-auto text-center rounded-full bg-brand-green"
                   >
-                    <i className="fa fa-home text-2xl text-white my-auto mt-2"></i>
+                    <i className="my-auto mt-2 text-2xl text-white fa fa-home"></i>
                   </motion.a>
                 </Link>
               </div>
-              <div className="flex justify-around w-full my-auto  px-5">
+              <div className="flex justify-around w-full px-5 my-auto">
                 <div className="group">
                   <a
                     href="#"
-                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
                   >
-                    <i className="fa fa-search  text-2xl block"></i>
+                    <i className="block text-2xl fa fa-search"></i>
                   </a>
                 </div>
                 <div className="group">
                   <a
                     href="#"
-                    className="flex items-end justify-center text-center w-full text-brand-gray-darker group-hover:text-brand-purple"
+                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
                   >
-                    <i className="fa fa-user text-2xl block"></i>
+                    <i className="block text-2xl fa fa-user"></i>
                   </a>
                 </div>
               </div>
@@ -145,14 +145,14 @@ export default Navbar;
 
 {
   /* <div className="hidden md:flex w-80">
-<div className="px-5 flex-1 flex flex-col min-h-0 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
-  <div className="flex-1 flex flex-col pt-6 overflow-y-auto">
+<div className="flex flex-col flex-1 min-h-0 px-5 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
+  <div className="flex flex-col flex-1 pt-6 overflow-y-auto">
     <motion.div whileTap={{ scale: 1.2 }} className="mx-auto mb-3">
       <Link href="/">
         <a>
           <img
             src="/icon1.png"
-            className="text-white h-16"
+            className="h-16 text-white"
             style={{ filter: "invert(100%) " }}
           />
         </a>
@@ -184,7 +184,7 @@ export default Navbar;
       ))}
     </nav>
   </div>
-  <div className="flex-shrink-0 flex p-4"></div>
+  <div className="flex flex-shrink-0 p-4"></div>
 </div>
 </div> */
 }
