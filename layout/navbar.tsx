@@ -21,7 +21,7 @@ const Navbar = () => {
   const navigation = [
     { name: "Dashboard", href: "/", icon: HomeIcon },
     { name: "Contact", href: "/contact", icon: UsersIcon },
-    { name: "Projects", href: "#", icon: FolderIcon },
+    { name: "Blogs", href: "/blog", icon: FolderIcon },
     { name: "Calendar", href: "#", icon: CalendarIcon },
     { name: "Documents", href: "#", icon: InboxIcon },
     { name: "Reports", href: "#", icon: ChartBarIcon },
@@ -88,20 +88,18 @@ const Navbar = () => {
             <div className="flex py-2">
               <div className="flex justify-around w-full px-5 my-auto">
                 <div className="group">
-                  <a
-                    href="#"
-                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
-                  >
-                    <i className="block text-2xl fa fa-cog"></i>
-                  </a>
+                  <Link href="/">
+                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                      <CalendarIcon className="flex items-center w-6 h-6" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="group">
-                  <a
-                    href="#"
-                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
-                  >
-                    <i className="block text-2xl fa fa-compass"></i>
-                  </a>
+                  <Link href="/contact">
+                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                      <UsersIcon className="flex items-center w-6 h-6" />
+                    </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex justify-center flex-1 w-full h-full mx-auto my-auto outline-none cursor-pointer group">
@@ -111,26 +109,24 @@ const Navbar = () => {
                     transition={{ duration: 0.1 }}
                     className="w-12 h-12 my-auto text-center rounded-full bg-brand-green"
                   >
-                    <i className="my-auto mt-2 text-2xl text-white fa fa-home"></i>
+                    <HomeIcon className="flex items-center w-full h-full p-2.5 mx-auto text-white" />
                   </motion.a>
                 </Link>
               </div>
-              <div className="flex justify-around w-full px-5 my-auto">
+              <div className="flex justify-around w-full px-5 my-auto ">
                 <div className="group">
-                  <a
-                    href="#"
-                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
-                  >
-                    <i className="block text-2xl fa fa-search"></i>
-                  </a>
+                  <Link href="/blog">
+                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                      <FolderIcon className="flex items-center w-6 h-6" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="group">
-                  <a
-                    href="#"
-                    className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple"
-                  >
-                    <i className="block text-2xl fa fa-user"></i>
-                  </a>
+                  <Link href="/">
+                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                      <InboxIcon className="flex items-center w-6 h-6" />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

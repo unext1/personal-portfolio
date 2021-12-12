@@ -36,12 +36,12 @@ const Contact = () => {
       />
       <motion.img
         variants={item}
-        src="../image.png"
+        src="../fist.png"
         className="absolute text-white -rotate-[30deg] left-10 md:h-44 md:w-44 h-36 w-36 bottom-32 md:bottom-52 md:left-56 "
       />
       <motion.img
         variants={item}
-        src="../image.png"
+        src="../fist.png"
         className="absolute left-0 right-0 hidden mx-auto text-white lg:block h-44 w-44 top-56"
       />
       <motion.img

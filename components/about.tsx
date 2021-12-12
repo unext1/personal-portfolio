@@ -92,7 +92,7 @@ const About = () => {
                 My skills
               </h1>
               <img
-                src="../image.png"
+                src="../fist.png"
                 className="h-20 ml-3 transform rotate-12"
               />
             </div>
@@ -134,14 +134,14 @@ const About = () => {
                     <div className="text-3xl font-bold text-white md:text-xl xl:text-3xl">
                       Web development
                     </div>
-                    <div className="flex mt-3 space-x-1 xl:space-x-3">
-                      <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-brand-gray-darker text-white">
+                    <div className="flex mt-3 space-x-1 text-xs xl:space-x-3">
+                      <span className="px-3 py-0.5 bg-brand-purple rounded-2xl text-white">
                         HTML
                       </span>
-                      <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-brand-gray-darker text-white">
+                      <span className="px-3 py-0.5 bg-brand-purple rounded-2xl text-white">
                         CSS
                       </span>
-                      <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-brand-gray-darker text-white">
+                      <span className="px-3 py-0.5 bg-brand-purple rounded-2xl text-white">
                         JAVASCRIPT
                       </span>
                     </div>
