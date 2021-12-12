@@ -1,13 +1,11 @@
 import React, { FC, useEffect, useRef, useContext } from "react";
-import { useRouter } from "next/router";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
 import { pageTransition, pageVariants } from "lib/framer-settings";
-import Footer from "./footer";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="relative flex w-full bg-brand-dark-900 selection:bg-transparent selection:text-brand-purple">
+    <div className="relative flex w-full bg-brand-dark-900 selection:bg-brand-purple selection:text-white">
       <div className="mr-0 md:mr-[90px]">
         <Navbar />
       </div>
