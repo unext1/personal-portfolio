@@ -69,6 +69,35 @@ export default function Index() {
             </div>
           </div>
         </div>
+        <div className="relative grid w-full lg:grid lg:grid-cols-5 gap-y-10">
+          <div className="z-10 col-span-1 my-auto md:col-span-2">
+            <span className="text-xl text-brand-gray-lighter ">
+              Affiliate marketing, Ux, Ui, Front-end
+            </span>
+            <h1
+              className="my-3 text-4xl font-bold text-white md:text-6xl"
+              style={{ lineHeight: 1.2 }}
+            >
+              Riiski
+            </h1>
+            <button className="mt-3 text-sm text-white uppercase border-b md:text-md">
+              MORE INFO
+            </button>
+          </div>
+          <div className="relative z-0 flex items-center my-auto mt-20 align-middle cursor-pointer md:w-full md:col-span-3 justify-items-center group">
+            <div className="absolute w-full h-full opacity-50 bg-gradient-to-b from-brand-green via-brand-dark-900 rounded-xl "></div>
+
+            <div className="relative w-full h-full p-5 md:p-10 ">
+              <motion.img
+                whileHover={{ scale: 0.95 }}
+                animate={{ scale: 1 }}
+                src="/project1.png"
+                alt="Detail of zipper pull with tan leather and silver rivet."
+                className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
+              />
+            </div>
+          </div>
+        </div>
       </motion.div>
     </>
   );

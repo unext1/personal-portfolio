@@ -60,7 +60,7 @@ const Contact = () => {
         className="absolute hidden text-white h-44 w-44 right-64 bottom-20 rotate-12 lg:block"
       />
 
-      <div className="container w-full mx-auto ">
+      <div className="w-full h-full mx-auto">
         <div className="relative flex items-center justify-center w-full h-full text-center">
           <div className="z-10 w-full text-4xl font-bold lg:text-7xl md:text-7xl xl:text-8xl">
             <motion.h1
@@ -87,7 +87,7 @@ const Contact = () => {
               whileHover={{ scale: 0.9 }}
               className="relative mt-10 text-sm tracking-widest text-white underline uppercase cursor-pointer md:text-lg underline-offset-8"
             >
-              Contact now
+              <a href="mailto:unextbusinessman@gmail.com">Contact now</a>
             </motion.div>
           </div>
         </div>
