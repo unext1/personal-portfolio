@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 import { Layout } from "../layout/index";
 import { useRouter } from "next/router";
 import Loader from "../components/loading";
-import {
-  motion,
-  AnimatePresence,
-  LazyMotion,
-  domAnimation,
-} from "framer-motion";
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
@@ -25,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div key={router.route} className="">
+      <motion.div key={router.route}>
         {loading ? (
           <Loader />
         ) : (

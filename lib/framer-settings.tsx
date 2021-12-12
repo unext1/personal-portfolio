@@ -5,11 +5,9 @@ export const pageVariants = {
   },
   out: {
     opacity: 0,
-    scale: 0.95,
   },
   initial: {
     opacity: 0,
-    scale: 0.95,
   },
 };
 

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Footer = () => {
   const navigation = [
     {
@@ -63,22 +65,32 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="bg-brand-dark-900 md:pl-24 border-t-2 border-brand-dark-700 pb-16 md:pb-0">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-white hover:text-brand-gray-lighter"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+    <footer className="pb-16 border-t-2 bg-brand-dark-900 md:pl-24 border-brand-dark-700 md:pb-0">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="md:order-2 group">
+          <div className="hidden md:block">
+            <p className="mb-3 text-xs text-right text-white uppercase group-hover:hidden">
+              SOCIAL
+            </p>
+            <p className="hidden mb-3 text-xs text-right text-white uppercase group-hover:block">
+              SOCIALLY AWKWARD
+            </p>
+          </div>
+          <div className="flex justify-center space-x-6">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-white hover:text-brand-gray-lighter"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="w-6 h-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base text-brand-gray-lighter">
+          <p className="text-base text-center text-brand-gray-lighter">
             &copy; 2020 You are Next, Inc. All rights reserved.
           </p>
         </div>

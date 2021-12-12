@@ -24,32 +24,32 @@ const About = () => {
   return (
     <div className="mt-20">
       <div className="grid w-full lg:grid-cols-4 gap-x-16">
-        <div className=" lg:sticky lg:top-20 w-full col-span-3 lg:col-span-1 experience-height ">
+        <div className="w-full col-span-3 lg:sticky lg:top-20 lg:col-span-1 experience-height">
           <div className="flex md:block ">
-            <h1 className="text-white text-8xl mr-5">4+</h1>
-            <div className="text-brand-gray-lighter mt-0 md:mt-5">
-              <span className="block mb-1 font-semibold text-xl ">Years</span>
-              <span className="block mb-1 font-semibold text-xl ">
+            <h1 className="mr-5 text-white text-8xl">4+</h1>
+            <div className="mt-0 text-brand-gray-lighter md:mt-5">
+              <span className="block mb-1 text-xl font-semibold ">Years</span>
+              <span className="block mb-1 text-xl font-semibold ">
                 Experience
               </span>
-              <span className="block mb-1 font-semibold text-xl ">
+              <span className="block mb-1 text-xl font-semibold ">
                 Programming
               </span>
             </div>
           </div>
         </div>
-        <div className="mx-auto w-full h-full col-span-3 ">
+        <div className="w-full h-full col-span-3 mx-auto ">
           <div>
             <div className="flex ">
-              <h1 className="text-3xl md:text-5xl tracking-wider font-bold text-white my-auto">
+              <h1 className="my-auto text-3xl font-bold text-white md:text-5xl">
                 This is what i do
               </h1>
               <img
                 src="../happy.png"
-                className="h-20 ml-3 rotate-12 transform"
+                className="h-20 ml-3 transform rotate-12"
               />
             </div>
-            <div className="mt-10 pb-12 sm:pb-16">
+            <div className="pb-12 mt-10 sm:pb-16">
               <section className="">
                 <h2 className="sr-only" id="contact-heading">
                   Contact us
@@ -58,9 +58,9 @@ const About = () => {
                   {supportLinks.map((link) => (
                     <div
                       key={link.name}
-                      className="flex flex-col bg-brand-dark-800 rounded-xl shadow-xl"
+                      className="flex flex-col shadow-xl bg-brand-dark-800 rounded-xl"
                     >
-                      <div className="flex-1 relative py-10 px-6  md:px-8">
+                      <div className="relative flex-1 px-6 py-10 md:px-8">
                         <h3 className="text-xl font-medium text-white">
                           {link.name}
                         </h3>
@@ -83,51 +83,51 @@ const About = () => {
             </div>
           </div>
           <div className="mt-20 ">
-            <div className="flex  group lg:grid lg:grid-cols-5 bg-brand-dark-800 rounded-xl mb-20 shadow-xl relative w-full  cursor-pointer">
-              <div className=" col-span-1 md:col-span-2 my-auto px-10  ">
-                <div className="w-28 absolute mx-auto -top-3 left-0 right-0 bg-brand-green rounded-xl">
-                  <h1 className="text-white uppercase text-center">
+            <div className="relative flex w-full mb-20 shadow-xl cursor-pointer group lg:grid lg:grid-cols-5 bg-brand-dark-800 rounded-xl">
+              <div className="col-span-1 px-10 my-auto md:col-span-2">
+                <div className="absolute left-0 right-0 mx-auto w-28 -top-3 bg-brand-green rounded-xl">
+                  <h1 className="text-center text-white uppercase">
                     Affiliate
                   </h1>
                 </div>
-                <h1 className="text-xl md:text-4xl mb-2 text-white tec font-semibold">
+                <h1 className="mb-2 text-xl font-semibold text-white md:text-4xl tec">
                   Riiski
                 </h1>
-                <p className="text-sm md:text-lg uppercase text-brand-gray-lighter tracking-wider">
+                <p className="text-sm tracking-wider uppercase md:text-lg text-brand-gray-lighter">
                   Lorem Ipsum is simply dummy text
                 </p>
               </div>
-              <div className="flex-auto w-5/6 md:w-full md:col-span-3 my-auto items-center flex align-middle justify-items-center  ">
-                <div className=" h-full bg-black rounded-r-xl ">
+              <div className="flex items-center flex-auto w-5/6 my-auto align-middle md:w-full md:col-span-3 justify-items-center ">
+                <div className="h-full bg-black rounded-r-xl">
                   <img
                     src="/project1.png"
                     alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="object-center object-cover w-full h-full opacity-75 py-10 group-hover:scale-95 transition duration-150"
+                    className="object-cover object-center w-full h-full py-10 transition duration-150 opacity-75 group-hover:scale-95"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="flex group lg:grid lg:grid-cols-5 bg-brand-dark-800 rounded-xl mb-20 shadow-xl relative w-full cursor-pointer">
-              <div className="flex-auto  w-5/6 md:w-full md:col-span-3 my-auto items-center flex align-middle justify-items-center ">
+            <div className="relative flex w-full mb-20 shadow-xl cursor-pointer group lg:grid lg:grid-cols-5 bg-brand-dark-800 rounded-xl">
+              <div className="flex items-center flex-auto w-5/6 my-auto align-middle md:w-full md:col-span-3 justify-items-center ">
                 <div className="h-full bg-black rounded-l-xl ">
                   <img
                     src="/project2.png"
                     alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="object-center object-cover w-full h-full opacity-75 py-10 group-hover:scale-95 transition duration-150"
+                    className="object-cover object-center w-full h-full py-10 transition duration-150 opacity-75 group-hover:scale-95"
                   />
                 </div>
               </div>
-              <div className="col-span-1  md:col-span-2 my-auto px-10 w-full text-right">
-                <div className="w-28 absolute mx-auto -top-3 left-0 right-0 bg-brand-green rounded-xl">
-                  <h1 className="text-white uppercase text-center">
+              <div className="w-full col-span-1 px-10 my-auto text-right md:col-span-2">
+                <div className="absolute left-0 right-0 mx-auto w-28 -top-3 bg-brand-green rounded-xl">
+                  <h1 className="text-center text-white uppercase">
                     Affiliate
                   </h1>
                 </div>
-                <h1 className="text-xl md:text-4xl mb-2 text-white font-semibold">
+                <h1 className="mb-2 text-xl font-semibold text-white md:text-4xl">
                   Shapez
                 </h1>
-                <p className="text-sm md:text-lg uppercase text-brand-gray-lighter tracking-wider">
+                <p className="text-sm tracking-wider uppercase md:text-lg text-brand-gray-lighter">
                   Lorem Ipsum is simply dummy text
                 </p>
               </div>

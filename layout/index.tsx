@@ -7,7 +7,7 @@ import Footer from "./footer";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="flex w-full min-h-screen bg-brand-dark-900 border-t-2 border-brand-dark-700">
+    <div className="relative flex w-full bg-brand-dark-900 selection:bg-transparent selection:text-brand-purple">
       <div className="mr-0 md:mr-[90px]">
         <Navbar />
       </div>
@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
         animate="in"
         variants={pageVariants}
         transition={pageTransition}
-        className="mx-auto container px-6 md:px-8 "
+        className="container px-6 mx-auto md:px-8 "
       >
         {children}
       </motion.main>

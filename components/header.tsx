@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="py-24 lg:pb-20 lg:pt-20 ">
+    <div className="py-24 lg:pt-24 lg:pb-48">
       <div className="mx-auto lg:grid lg:grid-cols-2 ">
         <div className="my-auto ">
           <motion.div
@@ -14,7 +14,7 @@ const Header = () => {
             }}
             className="lg:pr-16"
           >
-            <h1 className="text-6xl uppercase tracking-wider font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-purple">
+            <h1 className="text-6xl font-bold tracking-wider text-white uppercase">
               Focus on what matters
             </h1>
             <p className="mt-4 text-xl text-brand-gray-lighter">
@@ -26,13 +26,13 @@ const Header = () => {
                 whileTap={{ scale: 0.9 }}
                 className="relative group px-0.5"
               >
-                <div className="absolute -inset-0 bg-gradient-to-r from-brand-green to-brand-purple rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-200 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-brand-green to-brand-purple rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
                 <Link href="/contact">
-                  <a className="relative px-10 py-4 bg-brand-dark-900 rounded-xl leading-none flex items-center divide-x divide-gray-600">
+                  <a className="relative flex items-center px-10 py-4 leading-none divide-x divide-gray-600 bg-brand-dark-900 rounded-xl">
                     <span className="flex items-center space-x-5">
                       <motion.img
                         src="../peace.png"
-                        className="text-white h-6"
+                        className="h-6 text-white"
                       />
                       <span className="text-gray-100">Get in touch</span>
                     </span>
@@ -42,9 +42,8 @@ const Header = () => {
             </div>
           </motion.div>
         </div>
-        <div className="w-full my-auto hidden lg:block ">
+        <div className="hidden w-full my-auto lg:block ">
           <motion.img
-            whileHover={{ scale: 0.8, rotate: 10 }}
             initial={{ x: 1000, opacity: 1 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
