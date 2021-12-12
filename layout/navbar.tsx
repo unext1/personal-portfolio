@@ -96,7 +96,13 @@ const Navbar = () => {
                 </div>
                 <div className="group">
                   <Link href="/contact">
-                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                    <a
+                      className={`flex items-end justify-center w-full text-center  ${
+                        router.pathname == "/contact"
+                          ? "text-brand-green"
+                          : "text-brand-gray-darker"
+                      }`}
+                    >
                       <UsersIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
@@ -116,7 +122,13 @@ const Navbar = () => {
               <div className="flex justify-around w-full px-5 my-auto ">
                 <div className="group">
                   <Link href="/blog">
-                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                    <a
+                      className={`flex items-end justify-center w-full text-center  ${
+                        router.pathname == "/blog"
+                          ? "text-brand-green"
+                          : "text-brand-gray-darker"
+                      }`}
+                    >
                       <FolderIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
