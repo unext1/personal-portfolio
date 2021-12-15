@@ -2,11 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Urbanist" !important;
+  font-family: "Poppins", "Urbanist" !important;
   /* background: 50% / contain
     url(https://www.halo-lab.com/images/common/universe.png) black;
   min-height: 100vh; */
-  scrollbar-color: #22222c #15151b;
+  scrollbar-color: #202020 #111;
   scrollbar-width: thin;
 }
 
@@ -26,17 +26,17 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #15151b !important;
+  background: #111 !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #22222c !important;
+  background: #202020 !important;
 }
 
 .sidebar-tooltip {
   @apply absolute  w-auto p-1.5 px-3 left-10 ml-12 min-w-max rounded-md
-  text-white bg-brand-gray-darker
+  text-white bg-neutral-700
   text-xs font-semibold tracking-wide uppercase 
   transition-all duration-100 scale-0 origin-right;
 }

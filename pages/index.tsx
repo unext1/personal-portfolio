@@ -10,95 +10,6 @@ export default function Index() {
     <>
       <Header />
       <About />
-      <motion.div className="container relative w-full py-20 mx-auto">
-        <div className="relative grid w-full lg:grid lg:grid-cols-5 gap-y-10">
-          <div className="z-10 col-span-1 my-auto md:col-span-2">
-            <span className="text-xl text-brand-gray-lighter ">
-              Affiliate marketing, Ux, Ui, Front-end
-            </span>
-            <h1
-              className="my-3 text-4xl font-bold text-white md:text-6xl"
-              style={{ lineHeight: 1.2 }}
-            >
-              Riiski
-            </h1>
-            <button className="mt-3 text-sm text-white uppercase border-b md:text-md">
-              MORE INFO
-            </button>
-          </div>
-          <div className="relative z-0 flex items-center my-auto align-middle cursor-pointer md:w-full md:col-span-3 justify-items-center group">
-            <div className="absolute w-full h-full opacity-50 bg-gradient-to-l from-brand-green via-brand-dark-900 rounded-xl "></div>
-
-            <div className="relative w-full h-full p-5 md:p-10 ">
-              <motion.img
-                whileHover={{ scale: 0.95 }}
-                animate={{ scale: 1 }}
-                src="/project1.png"
-                alt="Detail of zipper pull with tan leather and silver rivet."
-                className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="relative grid w-full mt-20 lg:grid lg:grid-cols-5 gap-y-10">
-          <div className="absolute w-full h-full opacity-50 bg-gradient-to-l from-brand-purple via-brand-dark-900 rounded-xl "></div>
-
-          <div className="z-10 order-2 col-span-1 px-10 my-auto text-right md:col-span-2">
-            <span className="text-xl text-brand-gray-lighter ">
-              Affiliate marketing, Ux, Ui, Front-end
-            </span>
-            <h1
-              className="my-3 text-4xl font-bold text-white md:text-6xl"
-              style={{ lineHeight: 1.2 }}
-            >
-              Riiski
-            </h1>
-            <button className="mt-3 text-sm text-white uppercase border-b md:text-md">
-              MORE INFO
-            </button>
-          </div>
-          <div className="relative z-0 flex items-center order-1 my-auto align-middle cursor-pointer md:w-full md:col-span-3 justify-items-center group">
-            <div className="relative w-full h-full p-5 md:p-10 ">
-              <motion.img
-                whileHover={{ scale: 0.95 }}
-                animate={{ scale: 1 }}
-                src="/project1.png"
-                alt="Detail of zipper pull with tan leather and silver rivet."
-                className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="relative grid w-full lg:grid lg:grid-cols-5 gap-y-10">
-          <div className="z-10 col-span-1 my-auto md:col-span-2">
-            <span className="text-xl text-brand-gray-lighter ">
-              Affiliate marketing, Ux, Ui, Front-end
-            </span>
-            <h1
-              className="my-3 text-4xl font-bold text-white md:text-6xl"
-              style={{ lineHeight: 1.2 }}
-            >
-              Riiski
-            </h1>
-            <button className="mt-3 text-sm text-white uppercase border-b md:text-md">
-              MORE INFO
-            </button>
-          </div>
-          <div className="relative z-0 flex items-center my-auto mt-20 align-middle cursor-pointer md:w-full md:col-span-3 justify-items-center group">
-            <div className="absolute w-full h-full opacity-50 bg-gradient-to-b from-brand-green via-brand-dark-900 rounded-xl "></div>
-
-            <div className="relative w-full h-full p-5 md:p-10 ">
-              <motion.img
-                whileHover={{ scale: 0.95 }}
-                animate={{ scale: 1 }}
-                src="/project1.png"
-                alt="Detail of zipper pull with tan leather and silver rivet."
-                className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
-              />
-            </div>
-          </div>
-        </div>
-      </motion.div>
     </>
   );
 }
@@ -127,8 +38,7 @@ export async function getServerSideProps({ req, res }) {
   };
 }
 
-{
-  /* <motion.div
+/* <motion.div
 initial={{ opacity: 0, backgroundColor: "white" }}
 whileInView={{ opacity: 1 }}
 transition={{
@@ -136,4 +46,33 @@ transition={{
 }}
 className="bg-white w-52 h-52"
 ></motion.div> */
-}
+
+/* <div className="relative grid w-full lg:grid lg:grid-cols-5 gap-y-10">
+<div className="z-10 col-span-1 my-auto md:col-span-2">
+  <span className="text-xl text-brand-gray-lighter ">
+    Affiliate marketing, Ux, Ui, Front-end
+  </span>
+  <h1
+    className="my-3 text-4xl font-bold text-white md:text-6xl"
+    style={{ lineHeight: 1.2 }}
+  >
+    Riiski
+  </h1>
+  <button className="mt-3 text-sm text-white uppercase border-b md:text-md">
+    MORE INFO
+  </button>
+</div>
+<div className="relative z-0 flex items-center my-auto align-middle cursor-pointer md:w-full md:col-span-3 justify-items-center group">
+  <div className="absolute w-full h-full opacity-50 bg-gradient-to-l from-blue-700 via-brand-dark-900 rounded-xl "></div>
+
+  <div className="relative w-full h-full p-5 md:p-10 ">
+    <motion.img
+      whileHover={{ scale: 0.95 }}
+      animate={{ scale: 1 }}
+      src="/project1.png"
+      alt="Detail of zipper pull with tan leather and silver rivet."
+      className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
+    />
+  </div>
+</div>
+</div> */

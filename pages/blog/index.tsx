@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   const posts = [
@@ -24,13 +25,25 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen py-24 lg:pt-24 lg:pb-48 ">
-      <div className="mx-auto lg:grid lg:grid-cols-2 ">
+    <div className="flex items-center justify-center w-full h-full min-h-screen ">
+      <div>
+        <motion.h1
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            y: { type: "spring", stiffness: 120 },
+          }}
+          className="text-3xl tracking-wider text-white uppercase md:text-7xl"
+        >
+          Comming soon...
+        </motion.h1>
+      </div>
+      {/* <div className="mx-auto lg:grid lg:grid-cols-2 ">
         <div className="my-auto ">
           <h1 className="text-6xl font-bold tracking-wider text-white uppercase">
             My Blog world
           </h1>
-          <p className="mt-4 text-xl text-brand-gray-lighter">
+          <p className="mt-4 text-xl text-neutral-500 ">
             Entry to my mind
           </p>
         </div>
@@ -55,21 +68,21 @@ const Blog = () => {
                     <p className="text-xl font-semibold text-white">
                       {post.title}
                     </p>
-                    <p className="mt-3 text-base text-brand-gray-lighter ">
+                    <p className="mt-3 text-base text-neutral-500 ">
                       {post.description}
                     </p>
                   </a>
                 </Link>
               </div>
               <div className="flex items-center mt-6">
-                <h1 className="text-sm font-bold tracking-wider text-brand-purple">
+                <h1 className="text-sm font-bold tracking-wider text-red-500">
                   Read more...
                 </h1>
               </div>
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

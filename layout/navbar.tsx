@@ -22,9 +22,9 @@ const Navbar = () => {
     { name: "Dashboard", href: "/", icon: HomeIcon },
     { name: "Contact", href: "/contact", icon: UsersIcon },
     { name: "Blogs", href: "/blog", icon: FolderIcon },
-    { name: "Calendar", href: "#", icon: CalendarIcon },
-    { name: "Documents", href: "#", icon: InboxIcon },
-    { name: "Reports", href: "#", icon: ChartBarIcon },
+    // { name: "Calendar", href: "#", icon: CalendarIcon },
+    // { name: "Documents", href: "#", icon: InboxIcon },
+    // { name: "Reports", href: "#", icon: ChartBarIcon },
   ];
 
   const router = useRouter();
@@ -58,16 +58,16 @@ const Navbar = () => {
                       whileTap={{ scale: 0.8 }}
                       className={classNames(
                         router.asPath == item.href
-                          ? "bg-brand-purple text-white "
-                          : "text-brand-gray-darker hover:bg-brand-purple hover:text-white ",
-                        "group flex items-center px-3 py-2.5 text-sm font-medium rounded-xl "
+                          ? "bg-red-500 text-white "
+                          : "text-neutral-700 hover:bg-red-500 hover:text-white ",
+                        "group flex items-center px-3 py-2.5 text-sm rounded-xl "
                       )}
                     >
                       <item.icon
                         className={classNames(
                           router.asPath == item.href
                             ? "text-white"
-                            : "text-brand-gray-darker group-hover:text-white",
+                            : "text-neutral-700 group-hover:text-white",
                           "flex-shrink-0 h-6 w-6"
                         )}
                         aria-hidden="true"
@@ -87,20 +87,20 @@ const Navbar = () => {
           <div className="rounded-full shadow-2xl bg-brand-dark-600 bg-opacity-90 ">
             <div className="flex py-2">
               <div className="flex justify-around w-full px-5 my-auto">
-                <div className="group">
+                {/* <div className="group">
                   <Link href="/">
-                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                    <a className="flex items-end justify-center w-full text-center text-neutral-700 group-hover:text-red-500">
                       <CalendarIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
-                </div>
+                </div> */}
                 <div className="group">
                   <Link href="/contact">
                     <a
                       className={`flex items-end justify-center w-full text-center  ${
                         router.pathname == "/contact"
-                          ? "text-brand-green"
-                          : "text-brand-gray-darker"
+                          ? "text-red-500"
+                          : "text-neutral-700"
                       }`}
                     >
                       <UsersIcon className="flex items-center w-6 h-6" />
@@ -113,7 +113,7 @@ const Navbar = () => {
                   <motion.a
                     whileTap={{ scale: 0.8 }}
                     transition={{ duration: 0.1 }}
-                    className="w-12 h-12 my-auto text-center rounded-full bg-brand-green"
+                    className="w-12 h-12 my-auto text-center bg-red-500 rounded-full"
                   >
                     <HomeIcon className="flex items-center w-full h-full p-2.5 mx-auto text-white" />
                   </motion.a>
@@ -125,21 +125,21 @@ const Navbar = () => {
                     <a
                       className={`flex items-end justify-center w-full text-center  ${
                         router.pathname == "/blog"
-                          ? "text-brand-green"
-                          : "text-brand-gray-darker"
+                          ? "text-red-500"
+                          : "text-neutral-700"
                       }`}
                     >
                       <FolderIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
                 </div>
-                <div className="group">
+                {/* <div className="group">
                   <Link href="/">
-                    <a className="flex items-end justify-center w-full text-center text-brand-gray-darker group-hover:text-brand-purple">
+                    <a className="flex items-end justify-center w-full text-center text-neutral-700 group-hover:text-red-500">
                       <InboxIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -172,16 +172,16 @@ export default Navbar;
           <a
             className={classNames(
               router.asPath == item.href
-                ? "bg-brand-purple text-white "
-                : "text-brand-gray-darker hover:bg-brand-purple hover:text-white ",
-              "group flex items-center px-3 py-2.5 text-sm font-medium rounded-md "
+                ? "bg-red-500 text-white "
+                : "text-neutral-700 hover:bg-red-500 hover:text-white ",
+              "group flex items-center px-3 py-2.5 text-sm rounded-md "
             )}
           >
             <item.icon
               className={classNames(
                 router.asPath == item.href
                   ? "text-white"
-                  : "text-brand-gray-darker group-hover:text-white",
+                  : "text-neutral-700 group-hover:text-white",
                 "mr-3 flex-shrink-0 h-6 w-6"
               )}
               aria-hidden="true"

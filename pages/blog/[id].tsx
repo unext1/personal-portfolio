@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Blog = () => {
   return (
     <div className="max-w-screen-lg min-h-screen mx-auto">
-      <div className="my-20">
+      {/* <div className="my-20">
         <div className="relative w-full max-w-screen-xl mx-auto mb-4 md:mb-0">
           <div className="aspect-w-16 aspect-h-9">
             <div
@@ -33,7 +33,7 @@ const Blog = () => {
             yyoyooyoyoyoo
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

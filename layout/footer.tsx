@@ -81,7 +81,7 @@ const Footer = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-brand-gray-lighter"
+                className="text-white hover:text-neutral-500 "
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="w-6 h-6" aria-hidden="true" />
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-base text-center text-brand-gray-lighter">
+          <p className="text-base text-center text-neutral-500 ">
             &copy; 2020 You are Next, Inc. All rights reserved.
           </p>
         </div>

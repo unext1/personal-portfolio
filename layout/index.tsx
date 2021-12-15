@@ -5,7 +5,7 @@ import { pageTransition, pageVariants } from "lib/framer-settings";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="relative flex w-full bg-brand-dark-900 selection:bg-brand-purple selection:text-white">
+    <div className="relative flex w-full bg-brand-dark-900 selection:bg-red-500 selection:text-white">
       <div className="mr-0 md:mr-[90px]">
         <Navbar />
       </div>
