@@ -4,7 +4,7 @@ import Link from "next/link";
 const Blog = () => {
   const posts = [
     {
-      title: "Boost your conversion rate",
+      title: "How i made 100$ under 3 Hours",
       href: "blog/1",
       category: { name: "Remix", href: "#" },
       description:

@@ -20,7 +20,7 @@ const Blog = () => {
           </div>
           <div className="absolute bottom-0 left-0 z-20 p-10">
             <h2 className="text-4xl font-semibold leading-tight text-gray-200">
-              Society.gg but remaking it into christmas theme
+              How i made 100$ under 3 Hours
             </h2>
           </div>
         </div>
