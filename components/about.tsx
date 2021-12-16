@@ -39,15 +39,15 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full col-span-3 mx-auto ">
+        <div className="w-full h-full col-span-3 mx-auto mt-5 md:mt-0">
           <div>
             <div className="flex mb-1">
-              <h1 className="my-auto text-3xl font-bold text-white md:text-5xl">
-                Me And My Portfolio
+              <h1 className="my-auto text-2xl font-bold text-white md:text-5xl">
+                This is what i do
               </h1>
               <img
                 src="../happy.png"
-                className="h-20 my-auto ml-4 transform rotate-12"
+                className="h-16 my-auto ml-4 transform md:h-20 rotate-12"
               />
             </div>
             <h1 className="my-auto text-lg text-neutral-500 md:text-xl">
@@ -62,7 +62,7 @@ const About = () => {
               whileHover={{ y: -15 }}
               transition={{ type: "spring", stiffness: 120 }}
             >
-              {/* <div className="absolute transition duration-200 opacity-75 inset-1 bg-gradient-to-r from-blue-700 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
+              {/* <div className="absolute inset-0 transition duration-200 opacity-75 bg-gradient-to-r from-red-500 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
               <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                 <div className="absolute right-0 px-10">
                   <p className="text-xs font-semibold text-right uppercase lg:text-base text-neutral-700">
@@ -76,7 +76,7 @@ const About = () => {
                   <motion.img
                     src="/project1.png"
                     alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl "
+                    className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
                   />
                 </div>
               </div>
@@ -86,7 +86,6 @@ const About = () => {
               whileHover={{ y: -15 }}
               transition={{ type: "spring", stiffness: 120 }}
             >
-              {/* <div className="absolute transition duration-200 opacity-75 inset-1 bg-gradient-to-r from-blue-700 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
               <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                 <div className="absolute right-0 px-10">
                   <p className="text-xs font-semibold text-right uppercase lg:text-base text-neutral-700">
@@ -96,11 +95,11 @@ const About = () => {
                     Riiski
                   </h1>
                 </div>
-                <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
+                <div className="relative p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
                   <motion.img
                     src="/project2.png"
                     alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl "
+                    className="w-full h-full transition duration-300 transform rounded-2xl"
                   />
                 </div>
               </div>

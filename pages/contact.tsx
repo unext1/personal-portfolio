@@ -87,7 +87,7 @@ const Contact = () => {
             <motion.div
               whileHover={{ scale: 0.95 }}
               whileTap={{ scale: 1.1 }}
-              className="relative mt-5 text-sm tracking-widest text-white underline uppercase cursor-pointer lg:mt-10 md:text-lg underline-offset-8"
+              className="relative mt-5 text-sm tracking-widest text-white cursor-pointer lg:mt-10 md:text-xl "
             >
               <a href="mailto:unextbusinessman@gmail.com">Contact now</a>
             </motion.div>

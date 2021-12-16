@@ -14,36 +14,34 @@ const Header = () => {
             }}
             className="lg:pr-52"
           >
-            <p className="flex mb-1 text-white">
+            <p className="flex text-sm text-white">
               Hi there
               <img src="../wave.png" className="flex h-5 px-2 my-auto" />,
               I&apos;m
             </p>
             <h1
-              className="-ml-1 text-5xl font-semibold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-red-500 lg:text-6xl xl:text-7xl"
+              className="-ml-1 text-5xl font-semibold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:text-6xl xl:text-8xl"
               style={{ lineHeight: 1.1 }}
             >
               Laurynas
-              <span className="block">Web Developer.</span>
             </h1>
             <p
-              className="mt-5 text-sm text-white lg:text-lg"
+              className="mt-5 text-sm font-semibold tracking-wide text-white lg:text-base"
               style={{ lineHeight: 1.3 }}
             >
-              I&apos;m a Front-End Developer in Sweden. I have serious passion
-              for UI effects, animations and creating intuitive, dynamic user
-              experiences.
+              I&apos;m a Full-Stack Developer placed in Sweden. I have passion
+              for everything i do, starting from web start to finish.
             </p>
             <div className="flex mt-10">
               <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
-                <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-blue-700 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-red-500 to-blue-700 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
                 <Link href="/contact">
-                  <a className="relative flex items-center px-12 py-4 leading-none divide-x divide-gray-500 bg-brand-dark-900 rounded-xl">
+                  <a className="relative flex items-center px-10 py-4 leading-none divide-x divide-gray-500 bg-brand-dark-900 rounded-xl">
                     <span className="flex items-center py-1 space-x-5">
-                      {/* <motion.img
+                      <motion.img
                         src="../peace.png"
                         className="h-6 text-white"
-                      /> */}
+                      />
                       <span className="text-gray-100">Get in touch</span>
                     </span>
                   </a>
@@ -67,11 +65,11 @@ const Header = () => {
 
           <motion.img
             src="../peace.png"
-            className="absolute items-center h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-10 -rotate-12 opacity-20"
+            className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-10 -rotate-12"
           />
           <motion.img
             src="../happy.png"
-            className="absolute right-0 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12 opacity-20"
+            className="absolute right-0 opacity-25 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12"
           />
         </div>
       </div>
