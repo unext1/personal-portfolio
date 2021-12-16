@@ -26,7 +26,7 @@ export default function Index() {
                 className="relative mt-5 text-sm tracking-widest text-white uppercase cursor-pointer lg:mt-10 md:text-lg underline-offset-8"
               >
                 <Link href="/contact">
-                  <a>Let's talk.</a>
+                  <a>Let&apos;s talk.</a>
                 </Link>
               </motion.div>
             </div>
