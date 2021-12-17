@@ -14,9 +14,9 @@ export default function Index() {
         <div className="w-full h-full mx-auto">
           <div className="relative flex items-center justify-center w-full h-full text-center">
             <div className="z-10 w-full text-3xl font-bold lg:text-7xl md:text-7xl ">
-              <h1 className="mb-1 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:mb-5">
+              {/* <h1 className="mb-1 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:mb-5">
                 About me
-              </h1>
+              </h1> */}
               <motion.h1 className="text-xl text-white md:text-2xl">
                 Got some crazy idea ?
               </motion.h1>
