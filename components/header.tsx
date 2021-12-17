@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="relative pb-40 py-28 lg:pt-40">
+    <div className="relative py-36 lg:py-40">
       <div className="mx-auto lg:grid lg:grid-cols-5 ">
         <div className="col-span-3 my-auto ">
           <motion.div
@@ -36,7 +36,7 @@ const Header = () => {
               <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
                 <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-red-500 to-blue-700 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
                 <Link href="/contact">
-                  <a className="relative flex items-center px-10 py-4 leading-none divide-x divide-gray-500 bg-brand-dark-900 rounded-xl">
+                  <a className="relative flex items-center px-7 py-2.5 leading-none divide-x divide-gray-500 md:py-4 md:px-10 bg-brand-dark-900 rounded-xl">
                     <span className="flex items-center py-1 space-x-5">
                       <motion.img
                         src="../peace.png"

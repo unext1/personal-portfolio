@@ -51,8 +51,8 @@ const About = () => {
               />
             </div>
             <h1 className="my-auto text-lg text-neutral-500 md:text-xl">
-              UX Designer and Full Stack Developer, specialized in UI/UX, and
-              digital designs from Sweden.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sit
+              exercitationem vel doloremque?
             </h1>
           </div>
 
