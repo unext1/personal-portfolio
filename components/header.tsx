@@ -29,8 +29,8 @@ const Header = () => {
               className="mt-5 text-sm font-semibold tracking-wide text-white lg:text-base"
               style={{ lineHeight: 1.3 }}
             >
-              I&apos;m a Full-Stack Developer placed in Sweden. I have passion
-              for everything i do, starting from web start to finish.
+              A Full-Stack Developer placed in Sweden. I have passion for
+              everything i do, starting from web start to finish.
             </p>
             <div className="flex mt-10">
               <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
