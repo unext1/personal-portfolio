@@ -80,7 +80,7 @@ const Contact = () => {
               transition={{
                 x: { type: "spring", stiffness: 50 },
               }}
-              className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-red-500"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700"
             >
               your dreams?
             </motion.h1>

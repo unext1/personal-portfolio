@@ -35,7 +35,7 @@ const Blog = () => {
           }}
           className="text-3xl tracking-wider text-white uppercase md:text-7xl"
         >
-          Comming soon...
+          Coming soon...
         </motion.h1>
       </div>
       {/* <div className="mx-auto lg:grid lg:grid-cols-2 ">

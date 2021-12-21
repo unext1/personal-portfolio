@@ -10,26 +10,30 @@ export default function Index() {
     <>
       <Header />
       <About />
-      <div className="relative flex items-center py-64 overflow-hidden">
+      <div className="relative flex items-center py-48 ">
         <div className="w-full h-full mx-auto">
-          <div className="relative flex items-center justify-center w-full h-full text-center">
-            <div className="z-10 w-full text-3xl font-bold lg:text-7xl md:text-7xl ">
-              {/* <h1 className="mb-1 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:mb-5">
-                About me
-              </h1> */}
-              <motion.h1 className="text-xl text-white md:text-2xl">
-                Got some crazy idea ?
-              </motion.h1>
-              <motion.div
-                whileHover={{ scale: 0.95 }}
-                whileTap={{ scale: 1.1 }}
-                className="relative mt-5 text-sm tracking-widest text-white uppercase cursor-pointer lg:mt-10 md:text-lg underline-offset-8"
-              >
-                <Link href="/contact">
-                  <a>Let&apos;s talk.</a>
-                </Link>
-              </motion.div>
-            </div>
+          <div className="relative justify-center w-full h-full text-center">
+            <h1 className="text-5xl font-bold text-transparent uppercase sm:text-7xl bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-8xl">
+              About me
+            </h1>
+            <p
+              className="mt-1 text-xs font-bold text-white uppercase sm:text-sm"
+              style={{ letterSpacing: "0.8em" }}
+            >
+              WEB DEVELOPER
+            </p>
+            <p className="mt-8 text-sm text-white sm:mt-16 md:text-base xl:px-96">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum
+            </p>
           </div>
         </div>
       </div>

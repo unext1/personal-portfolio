@@ -39,21 +39,21 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full col-span-3 mx-auto mt-5 md:mt-0">
+        <div className="w-full h-full col-span-3 mx-auto mt-5 lg:mt-0">
           <div>
-            <div className="flex mb-1">
-              <h1 className="my-auto text-2xl font-bold text-white md:text-5xl">
+            <div className="flex ">
+              <h1 className="my-auto text-2xl font-bold text-white uppercase md:text-5xl">
                 This is what i do
               </h1>
               <img
                 src="../happy.png"
-                className="h-16 my-auto ml-4 transform md:h-20 rotate-12"
+                className="h-16 ml-4 transform md:h-20 rotate-12"
               />
             </div>
-            <h1 className="my-auto text-lg text-neutral-500 md:text-xl">
+            <span className="my-auto text-md text-neutral-500 md:text-lg">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sit
               exercitationem vel doloremque?
-            </h1>
+            </span>
           </div>
 
           <div className="container relative w-full py-10 mx-auto space-y-20 ">
@@ -65,7 +65,7 @@ const About = () => {
               {/* <div className="absolute inset-0 transition duration-200 opacity-75 bg-gradient-to-r from-red-500 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
               <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                 <div className="absolute right-0 px-10">
-                  <p className="text-xs font-semibold text-right uppercase lg:text-base text-neutral-700">
+                  <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
                     Web Affilate
                   </p>
                   <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
@@ -88,11 +88,11 @@ const About = () => {
             >
               <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                 <div className="absolute right-0 px-10">
-                  <p className="text-xs font-semibold text-right uppercase lg:text-base text-neutral-700">
+                  <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
                     Web Affilate
                   </p>
                   <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
-                    Riiski
+                    Shapez
                   </h1>
                 </div>
                 <div className="relative p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">

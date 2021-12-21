@@ -50,7 +50,7 @@ const Header = () => {
             </div>
           </motion.div>
         </div>
-        <div className="hidden w-full col-span-2 my-auto py-36 lg:block bg-brand-dark-800 rounded-2xl ">
+        <div className="hidden w-full col-span-2 my-auto py-36 lg:block bg-brand-dark-800 rounded-2xl">
           <motion.img
             whileHover={{ rotate: 10, scale: 0.9 }}
             initial={{ y: 50, opacity: 0 }}
@@ -65,7 +65,7 @@ const Header = () => {
 
           <motion.img
             src="../peace.png"
-            className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-10 -rotate-12"
+            className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-12 -rotate-12"
           />
           <motion.img
             src="../happy.png"
