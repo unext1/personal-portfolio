@@ -34,9 +34,15 @@ const Navbar = () => {
       <div className="fixed hidden h-full md:flex">
         <div className="flex flex-col flex-1 px-5 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
           <div className="flex flex-col flex-1 pt-6 overflow-y-auto">
-            <div className="mx-auto mb-3">
+            <div className="mx-auto mb-3 cursor-pointer">
               <Link href="/">
-                <a>
+                <motion.h1
+                  className="text-5xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-b from-red-500 to-blue-700"
+                  style={{ lineHeight: 1.1 }}
+                >
+                  L
+                </motion.h1>
+                {/* <a>
                   <motion.img
                     whileTap={{ scale: 1.1, rotate: 0 }}
                     whileHover={{ rotate: 10, scale: 0.9 }}
@@ -44,7 +50,7 @@ const Navbar = () => {
                     className="w-12 h-12 text-white"
                     style={{ filter: "invert(100%) " }}
                   />
-                </a>
+                </a> */}
               </Link>
             </div>
             <nav className="mt-5 flex-1 space-y-2.5 ">

@@ -62,47 +62,55 @@ const About = () => {
               whileHover={{ y: -15 }}
               transition={{ type: "spring", stiffness: 120 }}
             >
-              {/* <div className="absolute inset-0 transition duration-200 opacity-75 bg-gradient-to-r from-red-500 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
-              <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
-                <div className="absolute right-0 px-10">
-                  <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
-                    Web Affilate
-                  </p>
-                  <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
-                    Riiski
-                  </h1>
+              <a href="https://riiski.com" target="_blank" rel="noreferrer">
+                {/* <div className="absolute inset-0 transition duration-200 opacity-75 bg-gradient-to-r from-red-500 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
+                <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
+                  <div className="absolute right-0 px-10">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
+                      Web Affilate
+                    </p>
+                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                      Riiski
+                    </h1>
+                  </div>
+                  <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
+                    <motion.img
+                      src="/project1.png"
+                      alt="Detail of zipper pull with tan leather and silver rivet."
+                      className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
+                    />
+                  </div>
                 </div>
-                <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
-                  <motion.img
-                    src="/project1.png"
-                    alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
-                  />
-                </div>
-              </div>
+              </a>
             </motion.div>
             <motion.div
               className="relative cursor-pointer group "
               whileHover={{ y: -15 }}
               transition={{ type: "spring", stiffness: 120 }}
             >
-              <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
-                <div className="absolute right-0 px-10">
-                  <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
-                    Web Affilate
-                  </p>
-                  <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
-                    Shapez
-                  </h1>
+              <a
+                href="https://shapez.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
+                  <div className="absolute right-0 px-10">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
+                      Web Affilate
+                    </p>
+                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                      Shapez
+                    </h1>
+                  </div>
+                  <div className="relative p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
+                    <motion.img
+                      src="/project2.png"
+                      alt="Detail of zipper pull with tan leather and silver rivet."
+                      className="w-full h-full transition duration-300 transform rounded-2xl"
+                    />
+                  </div>
                 </div>
-                <div className="relative p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
-                  <motion.img
-                    src="/project2.png"
-                    alt="Detail of zipper pull with tan leather and silver rivet."
-                    className="w-full h-full transition duration-300 transform rounded-2xl"
-                  />
-                </div>
-              </div>
+              </a>
             </motion.div>
           </div>
         </div>

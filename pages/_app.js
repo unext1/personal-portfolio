@@ -15,24 +15,26 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 2200);
   }, []);
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      <motion.div key={router.route}>
-        {loading ? (
-          <Loader />
-        ) : (
-          <>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-            <Footer />
-          </>
-        )}
-      </motion.div>
-    </AnimatePresence>
+    <AnimateSharedLayout type="crossFade">
+      <AnimatePresence exitBeforeEnter>
+        <motion.div key={router.route}>
+          {loading ? (
+            <Loader />
+          ) : (
+            <>
+              <Layout>
+                <Component {...pageProps} />
+              </Layout>
+              <Footer />
+            </>
+          )}
+        </motion.div>
+      </AnimatePresence>
+    </AnimateSharedLayout>
   );
 }
 

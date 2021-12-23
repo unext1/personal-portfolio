@@ -13,7 +13,7 @@ export default function Index() {
       <div className="relative flex items-center py-48 ">
         <div className="w-full h-full mx-auto">
           <div className="relative justify-center w-full h-full text-center">
-            <h1 className="text-5xl font-bold text-transparent uppercase sm:text-7xl bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-8xl">
+            <h1 className="text-5xl font-bold text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-8xl">
               About me
             </h1>
             <p

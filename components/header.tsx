@@ -19,12 +19,12 @@ const Header = () => {
               <img src="../wave.png" className="flex h-5 px-2 my-auto" />,
               I&apos;m
             </p>
-            <h1
-              className="-ml-1 text-5xl font-semibold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:text-6xl xl:text-8xl"
+            <motion.h1
+              className="-ml-1 text-6xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 xl:text-7xl 2xl:text-8xl"
               style={{ lineHeight: 1.1 }}
             >
               Laurynas
-            </h1>
+            </motion.h1>
             <p
               className="mt-5 text-sm font-semibold tracking-wide text-white lg:text-base"
               style={{ lineHeight: 1.3 }}
@@ -50,7 +50,29 @@ const Header = () => {
             </div>
           </motion.div>
         </div>
-        <div className="hidden w-full col-span-2 my-auto py-36 lg:block bg-brand-dark-800 rounded-2xl">
+        <div className="items-center justify-center hidden w-full col-span-2 py-10 my-auto lg:flex bg-brand-dark-800 rounded-2xl">
+          <motion.img
+            whileHover={{ rotate: 10, scale: 0.9 }}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.3,
+              y: { type: "spring", stiffness: 120, delay: 0.1 },
+            }}
+            src="../peace.png"
+            alt=""
+            className="w-2/3 p-5 mx-auto"
+          />
+          <motion.img
+            src="../peace.png"
+            className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-12 md:right-64 xl:right-96 -rotate-12"
+          />
+          <motion.img
+            src="../happy.png"
+            className="absolute right-0 opacity-25 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12"
+          />
+        </div>
+        {/* <div className="hidden w-full col-span-2 my-auto py-36 lg:block bg-brand-dark-800 rounded-2xl">
           <motion.img
             whileHover={{ rotate: 10, scale: 0.9 }}
             initial={{ y: 50, opacity: 0 }}
@@ -71,7 +93,7 @@ const Header = () => {
             src="../happy.png"
             className="absolute right-0 opacity-25 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

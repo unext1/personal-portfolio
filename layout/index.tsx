@@ -5,7 +5,7 @@ import { pageTransition, pageVariants } from "lib/framer-settings";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="relative flex w-full bg-brand-dark-900 selection:bg-red-500 selection:text-white">
+    <div className="relative flex w-full h-full bg-brand-dark-900 selection:bg-red-500 selection:text-white">
       <div className="mr-0 md:mr-[90px]">
         <Navbar />
       </div>
@@ -15,7 +15,7 @@ export const Layout = ({ children }) => {
         animate="in"
         variants={pageVariants}
         transition={pageTransition}
-        className="container px-6 mx-auto md:px-8 "
+        className="container px-6 mx-auto md:px-8"
       >
         {children}
       </motion.main>
