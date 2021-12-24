@@ -27,13 +27,15 @@ const About = () => {
       <div className="relative z-10 grid w-full lg:grid-cols-4 gap-x-16">
         <div className="w-full col-span-3 lg:sticky lg:top-20 lg:col-span-1 experience-height">
           <div className="flex md:block ">
-            <h1 className="mr-5 text-white text-8xl">4+</h1>
+            <h1 className="my-auto mr-5 text-6xl text-white lg:text-8xl">4+</h1>
             <div className="mt-0 text-neutral-500 md:mt-5">
-              <span className="block mb-1 text-xl font-semibold ">Years</span>
-              <span className="block mb-1 text-xl font-semibold ">
+              <span className="block mb-1 text-lg font-semibold lg:text-xl ">
+                Years
+              </span>
+              <span className="block mb-1 text-lg font-semibold lg:text-xl ">
                 Experience
               </span>
-              <span className="block mb-1 text-xl font-semibold ">
+              <span className="block mb-1 text-lg font-semibold lg:text-xl ">
                 Programming
               </span>
             </div>
