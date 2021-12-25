@@ -34,9 +34,11 @@ const Navbar = () => {
       <div className="fixed hidden h-full md:flex">
         <div className="flex flex-col flex-1 px-5 border-r-2 border-brand-dark-700 bg-brand-dark-900 ">
           <div className="flex flex-col flex-1 pt-6 overflow-y-auto">
-            <div className="mx-auto mb-3 cursor-pointer">
+            <div className="mx-auto cursor-pointer">
               <Link href="/">
                 <motion.h1
+                  whileTap={{ scale: 1.1, rotate: 0 }}
+                  whileHover={{ rotate: 10, scale: 0.9 }}
                   className="text-5xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-b from-red-500 to-blue-700"
                   style={{ lineHeight: 1.1 }}
                 >
