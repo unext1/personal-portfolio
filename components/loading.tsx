@@ -71,7 +71,7 @@ const Loader = () => {
         animate="show"
         exit="exit"
       >
-        <div className="flex -ml-1 text-5xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:text-6xl xl:text-9xl">
+        <div className="-ml-1 text-5xl font-semibold tracking-wider text-transparent uppercase md:flex bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 lg:text-6xl xl:text-9xl">
           {name.map((i) => (
             <motion.span variants={item} key={i}>
               {i}

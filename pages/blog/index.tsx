@@ -26,18 +26,16 @@ const Blog = () => {
 
   return (
     <div className="flex items-center justify-center w-full h-full min-h-screen ">
-      <div>
-        <motion.h1
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            y: { type: "spring", stiffness: 120 },
-          }}
-          className="text-3xl tracking-wider text-white uppercase md:text-7xl"
-        >
-          Coming soon...
-        </motion.h1>
-      </div>
+      <motion.h1
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          y: { type: "spring", stiffness: 120 },
+        }}
+        className="text-3xl tracking-wider text-white uppercase md:text-7xl"
+      >
+        Coming soon...
+      </motion.h1>
       {/* <div className="mx-auto lg:grid lg:grid-cols-2 ">
         <div className="my-auto ">
           <h1 className="text-6xl font-bold tracking-wider text-white uppercase">
