@@ -39,7 +39,7 @@ const Navbar = () => {
                 <motion.h1
                   whileTap={{ scale: 1.1, rotate: 0 }}
                   whileHover={{ rotate: 10, scale: 0.9 }}
-                  className="text-5xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-b from-red-500 to-blue-700"
+                  className="text-5xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-b from-red-500 to-blue-700 via-red-500"
                   style={{ lineHeight: 1.1 }}
                 >
                   L

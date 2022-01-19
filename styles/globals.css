@@ -35,10 +35,10 @@ a {
 }
 
 .sidebar-tooltip {
-  @apply absolute  w-auto p-1.5 px-3 left-10 ml-12 min-w-max rounded-md
-  text-white bg-neutral-700
-  text-xs font-semibold tracking-wide uppercase 
-  transition-all duration-100 scale-0 origin-right;
+  @apply absolute  w-auto p-1.5 px-3.5 ml-16 min-w-max rounded-md
+  text-white bg-neutral-800
+  text-xs font-semibold tracking-wide uppercase z-50
+  transition-all duration-100 scale-0 origin-left;
 }
 
 .experience-height {

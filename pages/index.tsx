@@ -22,7 +22,7 @@ export default function Index() {
             >
               WEB DEVELOPER
             </p>
-            <p className="mt-8 text-sm text-white sm:mt-16 md:text-base xl:px-96">
+            <p className="mt-8 text-sm text-white sm:mt-16 md:text-base xl:px-80">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley
