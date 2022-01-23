@@ -77,7 +77,7 @@ const About = () => {
                   </div>
                   <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
                     <motion.img
-                      src="/project1.png"
+                      src="/project1.jpg"
                       alt="Detail of zipper pull with tan leather and silver rivet."
                       className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
                     />
@@ -106,7 +106,7 @@ const About = () => {
                   </div>
                   <div className="relative p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
                     <motion.img
-                      src="/project2.png"
+                      src="/project2.jpg"
                       alt="Detail of zipper pull with tan leather and silver rivet."
                       className="w-full h-full transition duration-300 transform rounded-2xl"
                     />
