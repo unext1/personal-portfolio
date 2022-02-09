@@ -9,11 +9,39 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <title>Laurynas Portfolio</title>
         <Head>
-          <title>Laurynas Portfolio</title>
           <meta
             name="description"
-            content="Laurynas displaying his online work."
+            content="Here is where Laurynas displays his online work."
+          />
+
+          <meta property="og:url" content="https://www.playmode.vercel.com/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Laurynas Portfolio" />
+          <meta
+            property="og:description"
+            content="Here is where Laurynas displays his online work."
+          />
+          <meta
+            property="og:image"
+            content="https://i.imgur.com/KXpbToB.jpeg"
+          />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="twitter:domain" content="" />
+          <meta
+            property="twitter:url"
+            content="https://www.playmode.vercel.com/"
+          />
+          <meta name="twitter:title" content="Laurynas Portfolio" />
+          <meta
+            name="twitter:description"
+            content="Here is where Laurynas displays his online work."
+          />
+          <meta
+            name="twitter:image"
+            content="https://i.imgur.com/KXpbToB.jpeg"
           />
 
           <link

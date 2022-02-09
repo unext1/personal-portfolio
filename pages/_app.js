@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     <AnimateSharedLayout type="crossFade">
       <AnimatePresence exitBeforeEnter>
         <motion.div key={router.route}>
-          {loading ? (
+          {!loading ? (
             <Loader />
           ) : (
             <>
