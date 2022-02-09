@@ -67,7 +67,7 @@ const Navbar = () => {
                       className={classNames(
                         router.asPath == item.href
                           ? "bg-red-500 text-white "
-                          : "text-neutral-700 hover:bg-red-500 hover:text-white ",
+                          : "text-neutral-500 hover:bg-red-500 hover:text-white ",
                         "group flex items-center px-3 py-2.5 text-sm rounded-xl "
                       )}
                     >
@@ -75,7 +75,7 @@ const Navbar = () => {
                         className={classNames(
                           router.asPath == item.href
                             ? "text-white"
-                            : "text-neutral-700 group-hover:text-white",
+                            : "text-neutral-500 group-hover:text-white",
                           "flex-shrink-0 h-6 w-6"
                         )}
                         aria-hidden="true"
@@ -108,9 +108,10 @@ const Navbar = () => {
                       className={`flex items-end justify-center w-full text-center  ${
                         router.pathname == "/contact"
                           ? "text-red-500"
-                          : "text-neutral-700"
+                          : "text-neutral-400"
                       }`}
                     >
+                      <span className="sr-only">Contact</span>
                       <UsersIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>
@@ -123,6 +124,7 @@ const Navbar = () => {
                     transition={{ duration: 0.1 }}
                     className="w-12 h-12 my-auto text-center bg-red-500 rounded-full"
                   >
+                    <span className="sr-only">Home</span>
                     <HomeIcon className="flex items-center w-full h-full p-2.5 mx-auto text-white" />
                   </motion.a>
                 </Link>
@@ -134,9 +136,10 @@ const Navbar = () => {
                       className={`flex items-end justify-center w-full text-center  ${
                         router.pathname == "/blog"
                           ? "text-red-500"
-                          : "text-neutral-700"
+                          : "text-neutral-400"
                       }`}
                     >
+                      <span className="sr-only">Blog</span>
                       <FolderIcon className="flex items-center w-6 h-6" />
                     </a>
                   </Link>

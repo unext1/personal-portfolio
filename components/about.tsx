@@ -28,7 +28,7 @@ const About = () => {
         <div className="w-full col-span-3 lg:sticky lg:top-20 lg:col-span-1 experience-height">
           <div className="flex lg:block ">
             <h1 className="my-auto mr-5 text-6xl text-white md:text-8xl">4+</h1>
-            <div className="mt-0 text-neutral-500 md:mt-5">
+            <div className="mt-0 text-neutral-400 md:mt-5">
               <span className="block mb-1 text-lg font-semibold lg:text-xl ">
                 Years
               </span>
@@ -69,7 +69,7 @@ const About = () => {
                 {/* <div className="absolute inset-0 transition duration-200 opacity-75 bg-gradient-to-r from-red-500 to-red-500 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div> */}
                 <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                   <div className="absolute right-0 px-10">
-                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Web Affilate
                     </p>
                     <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
@@ -98,7 +98,7 @@ const About = () => {
               >
                 <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
                   <div className="absolute right-0 px-10">
-                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-700">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Web Affilate
                     </p>
                     <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">

@@ -70,10 +70,10 @@ const Footer = () => {
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
           <div className="md:order-2 group">
             <div className="hidden md:block">
-              <p className="mb-3 text-xs text-right uppercase text-neutral-500 group-hover:hidden">
+              <p className="mb-3 text-xs text-right uppercase text-neutral-400 group-hover:hidden">
                 SOCIAL
               </p>
-              <p className="hidden mb-3 text-xs text-right uppercase text-neutral-500 group-hover:block">
+              <p className="hidden mb-3 text-xs text-right uppercase text-neutral-400 group-hover:block">
                 SOCIALLY AWKWARD
               </p>
             </div>
