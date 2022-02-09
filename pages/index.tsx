@@ -96,7 +96,7 @@ className="bg-white w-52 h-52"
     <motion.img
       whileHover={{ scale: 0.95 }}
       animate={{ scale: 1 }}
-      src="/project1.png"
+      src="/project1.webp"
       alt="Detail of zipper pull with tan leather and silver rivet."
       className="object-cover object-center w-full h-full transition duration-150 rounded-xl 5 roup-hover:scale-95"
     />

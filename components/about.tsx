@@ -48,7 +48,8 @@ const About = () => {
                 This is what i do
               </h1>
               <img
-                src="../happy.png"
+                alt="happy emoji"
+                src="../happy.webp"
                 className="h-16 ml-4 transform md:h-20 rotate-12"
               />
             </div>
@@ -78,7 +79,7 @@ const About = () => {
                   <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
                     <motion.img
                       src="/project1.jpg"
-                      alt="Detail of zipper pull with tan leather and silver rivet."
+                      alt="Project1"
                       className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
                     />
                   </div>

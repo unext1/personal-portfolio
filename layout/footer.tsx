@@ -80,6 +80,7 @@ const Footer = () => {
             <div className="flex justify-center space-x-6">
               {navigation.map((item) => (
                 <a
+                  rel="noreferrer"
                   key={item.name}
                   href={item.href}
                   target="_blank"

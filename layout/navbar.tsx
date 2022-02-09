@@ -48,7 +48,7 @@ const Navbar = () => {
                   <motion.img
                     whileTap={{ scale: 1.1, rotate: 0 }}
                     whileHover={{ rotate: 10, scale: 0.9 }}
-                    src="/icon1.png"
+                    src="/icon1.webp"
                     className="w-12 h-12 text-white"
                     style={{ filter: "invert(100%) " }}
                   />
@@ -167,7 +167,7 @@ export default Navbar;
       <Link href="/">
         <a>
           <img
-            src="/icon1.png"
+            src="/icon1.webp"
             className="h-16 text-white"
             style={{ filter: "invert(100%) " }}
           />

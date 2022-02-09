@@ -26,38 +26,45 @@ const Contact = () => {
       <>
         <motion.img
           variants={item}
-          src="../peace.png"
+          src="../peace.webp"
           className="absolute h-36 text-whitems-center w-36 md:h-44 md:w-44 top-10 -rotate-12"
+          alt="peace emoji"
         />
         <motion.img
           variants={item}
-          src="../happy.png"
+          src="../happy.webp"
           className="absolute right-0 text-white md:h-44 md:w-44 h-36 w-36 top-36 md:top-20 rotate-12"
+          alt="happy emoji"
         />
         <motion.img
           variants={item}
-          src="../fist.png"
+          src="../fist.webp"
           className="absolute text-white -rotate-[30deg] left-10 md:h-44 md:w-44 h-36 w-36 bottom-32 md:bottom-52 md:left-56 "
+          alt="fist emoji"
         />
         <motion.img
           variants={item}
-          src="../fist.png"
+          src="../fist.webp"
           className="absolute left-0 right-0 hidden mx-auto text-white lg:block h-44 w-44 top-56"
+          alt="fist emoji"
         />
         <motion.img
           variants={item}
-          src="../happy.png"
+          src="../happy.webp"
           className="absolute hidden text-white h-44 w-44 lg:block"
+          alt="happy emoji"
         />
         <motion.img
           variants={item}
-          src="../peace.png"
+          src="../peace.webp"
           className="absolute hidden text-white h-44 w-44 right-20 lg:block"
+          alt="peace emoji"
         />
         <motion.img
           variants={item}
-          src="../peace.png"
+          src="../peace.webp"
           className="absolute hidden text-white h-44 w-44 right-64 bottom-20 rotate-12 lg:block"
+          alt="peace emoji"
         />
       </>
 

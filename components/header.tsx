@@ -16,8 +16,12 @@ const Header = () => {
           >
             <p className="flex text-sm text-white">
               Hi there
-              <img src="../wave.png" className="flex h-5 px-2 my-auto" />,
-              I&apos;m
+              <img
+                src="../wave.webp"
+                className="flex h-5 px-2 my-auto"
+                alt="wave emoji"
+              />
+              , I&apos;m
             </p>
             <motion.h1
               className="-ml-1 text-6xl font-semibold tracking-wider text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 xl:text-7xl 2xl:text-8xl"
@@ -39,7 +43,8 @@ const Header = () => {
                   <a className="relative flex items-center px-7 py-2.5 leading-none divide-x divide-gray-500 md:py-4 md:px-10 bg-brand-dark-900 rounded-xl">
                     <span className="flex items-center py-1 space-x-5">
                       <motion.img
-                        src="../peace.png"
+                        alt="peace emoji"
+                        src="../peace.webp"
                         className="h-6 text-white"
                       />
                       <span className="text-gray-100">Get in touch</span>
@@ -59,16 +64,18 @@ const Header = () => {
               duration: 0.3,
               y: { type: "spring", stiffness: 120, delay: 0.1 },
             }}
-            src="../peace.png"
-            alt=""
+            src="../peace.webp"
+            alt="peace emoji"
             className="w-2/3 p-5 mx-auto"
           />
           <motion.img
-            src="../peace.png"
+            alt="peace emoji"
+            src="../peace.webp"
             className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-12 md:right-64 xl:right-96 -rotate-12"
           />
           <motion.img
-            src="../happy.png"
+            alt="happy emoji"
+            src="../happy.webp"
             className="absolute right-0 opacity-25 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12"
           />
         </div>
@@ -80,17 +87,17 @@ const Header = () => {
             transition={{
               y: { type: "spring", stiffness: 120, delay: 0.1 },
             }}
-            src="../icon1.png"
+            src="../icon1.webp"
             alt=""
             className="w-56 p-5 mx-auto invert"
           />
 
           <motion.img
-            src="../peace.png"
+            src="../peace.webp"
             className="absolute items-center opacity-25 h-36 w-36 xl:h-44 xl:w-44 top-16 xl:top-12 -rotate-12"
           />
           <motion.img
-            src="../happy.png"
+            src="../happy.webp"
             className="absolute right-0 opacity-25 xl:h-44 xl:w-44 h-36 w-36 top-32 xl:top-20 rotate-12"
           />
         </div> */}
