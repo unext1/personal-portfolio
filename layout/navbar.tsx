@@ -119,14 +119,16 @@ const Navbar = () => {
               </div>
               <div className="flex justify-center flex-1 w-full h-full mx-auto my-auto outline-none cursor-pointer group">
                 <Link href="/">
-                  <motion.a
-                    whileTap={{ scale: 0.8 }}
-                    transition={{ duration: 0.1 }}
-                    className="w-12 h-12 my-auto text-center bg-red-500 rounded-full"
-                  >
-                    <span className="sr-only">Home</span>
-                    <HomeIcon className="flex items-center w-full h-full p-2.5 mx-auto text-white" />
-                  </motion.a>
+                  <a>
+                    <motion.div
+                      whileTap={{ scale: 0.8 }}
+                      transition={{ duration: 0.1 }}
+                      className="w-12 h-12 my-auto text-center bg-red-500 rounded-full"
+                    >
+                      <span className="sr-only">Home</span>
+                      <HomeIcon className="flex items-center w-full h-full p-2.5 mx-auto text-white" />
+                    </motion.div>
+                  </a>
                 </Link>
               </div>
               <div className="flex justify-around w-full px-5 my-auto ">
