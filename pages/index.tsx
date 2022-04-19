@@ -22,17 +22,13 @@ export default function Index() {
             >
               WEB DEVELOPER
             </p>
-            <p className="mt-8 text-sm text-white sm:mt-16 md:text-base xl:px-80">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum
+            <p className="mt-8 text-sm text-white sm:mt-8 md:text-base xl:px-80">
+              Hi again ! I'm a 18 year old programmer who can solve your
+              problems. In these 18 years, i've achieved a lot, which i am
+              really proud of. I've been programing since 14 and in these years
+              i have learned alot. The websites you saw above is just a tip of
+              the ice berg of what i can do. If you want to work togheter
+              contact me now :)
             </p>
           </div>
         </div>
