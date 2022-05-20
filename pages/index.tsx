@@ -23,12 +23,12 @@ export default function Index() {
               WEB DEVELOPER
             </p>
             <p className="mt-8 text-sm text-white sm:mt-8 md:text-base xl:px-80">
-              Hi again ! I'm a 18 year old programmer who can solve your
-              problems. In these 18 years, i've achieved a lot, which i am
-              really proud of. I've been programing since 14 and in these years
-              i have learned alot. The websites you saw above is just a tip of
-              the ice berg of what i can do. If you want to work togheter
-              contact me now :)
+              I&apos;m a 18 year old programmer who can solve your problems. In
+              these 18 years, i&apos;ve achieved a lot, which i am really proud
+              of. I&apos;ve been programing since 14 and in these years i got
+              better at problem solving, communication and of course web
+              developent. The websites you saw above is just a tip of the ice
+              berg of what i can do. If you want to work togheter contact me.
             </p>
           </div>
         </div>
