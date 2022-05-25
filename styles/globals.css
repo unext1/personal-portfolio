@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", "Urbanist" !important;
+  font-family: "Poppins", "Urbanist", Arial !important;
   /* background: 50% / contain
     url(https://www.halo-lab.com/images/common/universe.png) black;
   min-height: 100vh; */

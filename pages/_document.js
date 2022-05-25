@@ -70,7 +70,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="overflow-x-hidden">
+        <body className="overflow-x-hidden font-body">
           <Main />
           <NextScript />
         </body>

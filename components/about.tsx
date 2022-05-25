@@ -115,6 +115,35 @@ const About = () => {
                 </div>
               </a>
             </motion.div>
+            <motion.div
+              className="relative cursor-pointer group "
+              whileHover={{ y: -15 }}
+              transition={{ type: "spring", stiffness: 120 }}
+            >
+              <a
+                href="https://www.tenetestate.lt/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
+                  <div className="absolute right-0 px-10">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
+                      Real Estate Projects
+                    </p>
+                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                      Tenetestate
+                    </h1>
+                  </div>
+                  <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
+                    <motion.img
+                      src="/project3.png"
+                      alt="Project3"
+                      className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
+                    />
+                  </div>
+                </div>
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>

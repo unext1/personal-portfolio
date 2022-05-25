@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Blog = () => {
   return (
     <div className="max-w-screen-lg min-h-screen mx-auto">
@@ -27,7 +25,7 @@ const Blog = () => {
 
         <div className="w-full">
           <div
-            className="px-3 mt-10 prose xl:px-0"
+            className="px-3 mt-10 prose text-white xl:px-0"
             style={{ minWidth: "100%" }}
           >
             yyoyooyoyoyoo
