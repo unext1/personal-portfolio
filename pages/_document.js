@@ -16,7 +16,7 @@ class MyDocument extends Document {
             content="Here is where Laurynas displays his online work."
           />
 
-          <meta property="og:url" content="https://www.playmode.vercel.com/" />
+          <meta property="og:url" content="https://lauva.dev/" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Laurynas Portfolio" />
           <meta
@@ -30,10 +30,7 @@ class MyDocument extends Document {
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="" />
-          <meta
-            property="twitter:url"
-            content="https://www.playmode.vercel.com/"
-          />
+          <meta property="twitter:url" content="https://lauva.dev/" />
           <meta name="twitter:title" content="Laurynas Portfolio" />
           <meta
             name="twitter:description"
