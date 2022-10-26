@@ -30,17 +30,16 @@ const Header = () => {
               Laurynas
             </motion.h1>
             <p
-              className="mt-5 text-sm font-semibold tracking-wide text-white lg:text-base"
+              className="text-sm font-semibold tracking-wide text-white lg:text-base"
               style={{ lineHeight: 1.3 }}
             >
-              A Full-Stack Developer placed in Sweden. I have passion for
-              everything i do, starting from web start to finish.
+              A Full-Stack Developer placed in Sweden.
             </p>
             <div className="flex mt-10">
               <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
                 <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-red-500 to-blue-700 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
                 <Link href="/contact">
-                  <a className="relative flex items-center px-7 py-2.5 leading-none divide-x divide-gray-500 md:py-4 md:px-10 bg-brand-dark-900 rounded-xl">
+                  <a className="relative flex items-center px-7 py-2.5 leading-none divide-x divide-gray-500 md:py-3 md:px-10 bg-brand-dark-900 rounded-xl">
                     <span className="flex items-center py-1 space-x-5">
                       <motion.img
                         alt="peace emoji"

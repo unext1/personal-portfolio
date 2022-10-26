@@ -1,12 +1,13 @@
 import Header from "../components/header";
 import About from "components/about";
+import Link from "next/link";
 
 export default function Index() {
   return (
     <>
       <Header />
       <About />
-      <div className="relative flex items-center py-48 ">
+      <div className="relative flex items-center py-28 md:py-48 ">
         <div className="w-full h-full mx-auto">
           <div className="relative justify-center w-full h-full text-center">
             <h1 className="text-5xl font-bold text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-8xl">
@@ -19,13 +20,19 @@ export default function Index() {
               WEB DEVELOPER
             </p>
             <p className="mt-8 text-sm text-white sm:mt-8 md:text-base xl:px-80">
-              I&apos;m a 18 year old programmer who can solve your problems. In
-              these 18 years, i&apos;ve achieved a lot, which i am really proud
-              of. I&apos;ve been programing since 14 and in these years i got
-              better at problem solving, communication and of course web
-              developent. The websites you saw above is just a tip of the ice
-              berg of what i can do. If you want to work togheter contact me.
+              I&apos;m a 18 year old programmer who can solve your problems.
+              I&apos;ve been programing since 14 years old and in these years I
+              got better at problem solving, communication and of course web
+              development. The websites you saw above is just a tip of the
+              iceberg.
             </p>
+            <div className="mt-3">
+              <Link href="/contact">
+                <a className="text-xs text-white underline uppercase">
+                  Work with me !
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
