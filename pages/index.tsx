@@ -20,11 +20,11 @@ export default function Index() {
               WEB DEVELOPER
             </p>
             <p className="mt-8 text-sm text-white sm:mt-8 md:text-base xl:px-80">
-              I&apos;m a 18 year old programmer who can solve your problems.
-              I&apos;ve been programing since 14 years old and in these years I
-              got better at problem solving, communication and of course web
-              development. The websites you saw above is just a tip of the
-              iceberg.
+              I&apos;m a 19 year old programmer with a thrive to solve your
+              problems. Right now I&apos;m following my passion for Web
+              Development, therefore learning new technologies everyday and
+              developing as human being. Student at Front-End Developent Sweden,
+              Borås.
             </p>
             <div className="mt-3">
               <Link href="/contact">
