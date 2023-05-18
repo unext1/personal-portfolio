@@ -75,7 +75,7 @@ const About = () => {
                     <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Astrology Website
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                    <h1 className="mt-2 text-2xl font-semibold tracking-wide text-white uppercase md:text-4xl lg:mt-5 lg:text-5xl">
                       Mėnulio Ritmu
                     </h1>
                   </div>
@@ -101,7 +101,7 @@ const About = () => {
                     <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Web Affilate
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                    <h1 className="mt-2 text-2xl font-semibold tracking-wide text-white uppercase md:text-4xl lg:mt-5 lg:text-5xl">
                       Riiski
                     </h1>
                   </div>
@@ -115,7 +115,7 @@ const About = () => {
                 </div>
               </a>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               className="relative cursor-pointer group "
               whileHover={{ y: -15 }}
               transition={{ type: "spring", stiffness: 120 }}
@@ -130,7 +130,7 @@ const About = () => {
                     <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Web Affilate
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                    <h1 className="mt-2 text-2xl font-semibold tracking-wide text-white uppercase md:text-4xl lg:mt-5 lg:text-5xl">
                       Shapez
                     </h1>
                   </div>
@@ -143,7 +143,7 @@ const About = () => {
                   </div>
                 </div>
               </a>
-            </motion.div>
+            </motion.div> */}
             <motion.div
               className="relative cursor-pointer group "
               whileHover={{ y: -15 }}
@@ -159,7 +159,7 @@ const About = () => {
                     <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
                       Real Estate Projects
                     </p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-wide text-white uppercase lg:mt-5 lg:text-5xl">
+                    <h1 className="mt-2 text-2xl font-semibold tracking-wide text-white uppercase md:text-4xl lg:mt-5 lg:text-5xl">
                       Tenetestate
                     </h1>
                   </div>

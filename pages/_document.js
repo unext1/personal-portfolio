@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Here is where Laurynas displays his online work."
+            content="A place where Laurynas showcases his online work"
           />
 
           <meta property="og:url" content="https://lauva.dev/" />
@@ -21,7 +21,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Laurynas Portfolio" />
           <meta
             property="og:description"
-            content="Here is where Laurynas displays his online work."
+            content="A place where Laurynas showcases his online work"
           />
           <meta
             property="og:image"
@@ -34,7 +34,7 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="Laurynas Portfolio" />
           <meta
             name="twitter:description"
-            content="Here is where Laurynas displays his online work."
+            content="A place where Laurynas showcases his online work"
           />
           <meta
             name="twitter:image"

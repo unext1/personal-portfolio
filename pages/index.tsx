@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import About from "components/about";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Index() {
   return (
@@ -10,7 +11,7 @@ export default function Index() {
       <div className="relative flex items-center py-28 md:py-48 ">
         <div className="w-full h-full mx-auto">
           <div className="relative justify-center w-full h-full text-center">
-            <h1 className="text-5xl font-bold text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-8xl">
+            <h1 className="text-5xl font-bold tracking-wide text-transparent uppercase bg-clip-text bg-gradient-to-r from-red-500 to-blue-700 md:text-7xl">
               About me
             </h1>
             <p
@@ -19,20 +20,32 @@ export default function Index() {
             >
               WEB DEVELOPER
             </p>
-            <p className="mt-8 text-sm text-white sm:mt-8 md:text-base xl:px-80">
-              I&apos;m a 19 year old programmer with a thrive to solve your
-              problems. Right now I&apos;m following my passion for Web
-              Development, therefore learning new technologies everyday and
-              developing as human being. Student at Front-End Developent Sweden,
-              Borås.
+            <p className="mt-8 text-xs text-gray-300 md:text-sm xl:px-80">
+              Student at Front-End Developent Sweden, Borås.
             </p>
-            <div className="mt-3">
+            <p className="mt-2 text-sm text-white md:text-base xl:px-80">
+              I am a 19 year old programmer with a thrive to solve your
+              problems. Currently i am following my passion for web development
+              and constantly learning about new technologies and growing both
+              professionally and personally.
+            </p>
+            <div className="flex justify-center mt-10">
+              <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
+                <div className="absolute transition duration-200 opacity-75 -inset-0 bg-gradient-to-r from-red-500 to-blue-700 rounded-xl blur group-hover:opacity-100 group-hover:duration-200 animate-tilt"></div>
+                <Link href="/contact">
+                  <a className="relative flex items-center px-7 py-2.5 leading-none divide-x divide-gray-500 md:py-3 md:px-10 bg-brand-dark-900 rounded-xl">
+                    <span className="text-gray-100"> Let&apos;s work</span>
+                  </a>
+                </Link>
+              </motion.div>
+            </div>
+            {/* <div className="mt-3">
               <Link href="/contact">
                 <a className="text-xs text-white underline uppercase">
-                  Work with me !
+                  Let&apos;s work !
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Footer = () => {
   const navigation = [
     // {
@@ -66,7 +64,7 @@ const Footer = () => {
                 SOCIALLY AWKWARD
               </p>
             </div>
-            <div className="flex justify-center space-x-6">
+            <div className="flex justify-end space-x-6">
               {navigation.map((item) => (
                 <a
                   rel="noreferrer"

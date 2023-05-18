@@ -1,4 +1,4 @@
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
               className="text-sm font-semibold tracking-wide text-white lg:text-base"
               style={{ lineHeight: 1.3 }}
             >
-              A passionate Web Developer placed in Sweden.
+              A passionate web developer placed in Sweden.
             </p>
             <div className="flex mt-10">
               <motion.div whileTap={{ scale: 0.9 }} className="relative group ">
