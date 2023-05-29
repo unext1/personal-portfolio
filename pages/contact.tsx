@@ -96,7 +96,7 @@ const Contact = () => {
               whileTap={{ scale: 1.1 }}
               className="relative mt-5 text-sm tracking-widest text-white cursor-pointer lg:mt-10 md:text-xl "
             >
-              <a href="mailto:laurynas.valiulis2@gmail.com">Contact now</a>
+              <a href="mailto:info@lauva.dev">Contact now</a>
             </motion.div>
           </div>
         </div>
