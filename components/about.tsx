@@ -52,10 +52,6 @@ const About = () => {
                 className="h-16 ml-4 transform md:h-20 rotate-12"
               />
             </div>
-            <span className="my-auto text-md text-neutral-500 md:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sit
-              exercitationem vel doloremque?
-            </span>
           </div>
 
           <div className="container relative w-full pt-8 pb-10 mx-auto space-y-20 ">
