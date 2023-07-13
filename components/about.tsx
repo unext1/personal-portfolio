@@ -39,6 +39,18 @@ const About = () => {
               </span>
             </div>
           </div>
+          <div>
+            <div className=" text-white text-2xl font-semibold mt-6 mb-2">
+              Tech Stack
+            </div>
+            <div className="flex flex-wrap text-sm text-neutral-400">
+              <span>
+                React, HTML, CSS, Javascript, Typescript, TailwindCSS, NextJS,
+                RemixJS, NodeJS, Docker Hasura, Firebase, GraphQL, MongoDB,
+                Figma
+              </span>
+            </div>
+          </div>
         </div>
         <div className="w-full h-full col-span-3 mx-auto mt-5 lg:mt-0">
           <div>
@@ -54,7 +66,36 @@ const About = () => {
             </div>
           </div>
 
-          <div className="container relative w-full pt-8 pb-10 mx-auto space-y-20 ">
+          <div className="container relative w-full pt-8 pb-10 mx-auto space-y-20">
+            <motion.div
+              className="relative cursor-pointer group "
+              whileHover={{ y: -15 }}
+              transition={{ type: "spring", stiffness: 120 }}
+            >
+              <a
+                href="https://www.homebyaurelija.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="relative w-full p-6 transition shadow-md lg:p-10 lg:py-14 group-hover:shadow-2xl bg-brand-dark-800 rounded-2xl">
+                  <div className="absolute right-0 px-10">
+                    <p className="text-xs font-semibold tracking-wider text-right uppercase lg:text-base text-neutral-500">
+                      Portfolio
+                    </p>
+                    <h1 className="mt-2 text-2xl font-semibold tracking-wide text-white uppercase md:text-4xl lg:mt-5 lg:text-5xl">
+                      HomeByAurelija
+                    </h1>
+                  </div>
+                  <div className="p-0 pt-20 md:p-5 md:pt-24 lg:pt-36 xl:p-10 xl:pt-36 2xl:p-30">
+                    <motion.img
+                      src="/project5.jpg"
+                      alt="Project5"
+                      className="object-cover object-center w-full h-full transition duration-300 transform rounded-2xl group-hover:shadow-2xl "
+                    />
+                  </div>
+                </div>
+              </a>
+            </motion.div>
             <motion.div
               className="relative cursor-pointer group "
               whileHover={{ y: -15 }}
