@@ -22,16 +22,16 @@ function MyApp({ Component, pageProps }) {
     <AnimateSharedLayout type="crossFade">
       <AnimatePresence exitBeforeEnter>
         <motion.div key={router.route}>
-          {loading ? (
+          {/* {loading ? (
             <Loader />
           ) : (
-            <>
-              <Layout>
-                <Component {...pageProps} />
-              </Layout>
-              <Footer />
-            </>
-          )}
+            <> */}
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+          <Footer />
+          {/* </>
+          )} */}
         </motion.div>
       </AnimatePresence>
     </AnimateSharedLayout>

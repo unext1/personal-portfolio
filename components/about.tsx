@@ -43,7 +43,7 @@ const About = () => {
             <div className=" text-white text-2xl font-semibold mt-6 mb-2">
               Tech Stack
             </div>
-            <div className="flex flex-wrap text-sm text-neutral-400">
+            <div className="flex flex-wrap text-xs font-semibold uppercase text-neutral-400">
               <span>
                 React, HTML, CSS, Javascript, Typescript, TailwindCSS, NextJS,
                 RemixJS, NodeJS, Docker Hasura, Firebase, GraphQL, MongoDB,

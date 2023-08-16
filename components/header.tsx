@@ -30,7 +30,7 @@ const Header = () => {
               Laurynas
             </motion.h1>
             <p
-              className="text-sm font-semibold tracking-wide text-white lg:text-base"
+              className="text-sm font-semibold tracking-wide text-white mt-4 lg:text-base"
               style={{ lineHeight: 1.3 }}
             >
               A passionate web developer placed in Sweden.

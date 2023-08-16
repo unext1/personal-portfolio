@@ -64,7 +64,7 @@ const Footer = () => {
                 SOCIALLY AWKWARD
               </p>
             </div>
-            <div className="flex justify-end space-x-6">
+            <div className="flex justify-center md:justify-end space-x-6">
               {navigation.map((item) => (
                 <a
                   rel="noreferrer"
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
             <p className="text-base text-center text-neutral-500 ">
-              &copy; 2022 Lauva. All rights reserved.
+              &copy; 2023 Lauva. All rights reserved.
             </p>
           </div>
         </div>
